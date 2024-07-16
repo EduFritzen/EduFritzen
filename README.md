@@ -1,5 +1,5 @@
 ## Olá! Eu sou o Eduardo 👋
-Olá, sou um estudante de Ciência da Computação na Universidade Federal de Santa Maria - UFSM.
+Olá, sou um estudante de Ciência da Computação na Universidade Federal de Santa Maria - UFSM. Neste repositório você poderá encontrar diversos projetos realizados durante o curso.
 
 Rede Social:
 
