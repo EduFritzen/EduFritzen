@@ -1,0 +1,26 @@
+
+poswrrior.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+atackr
+  rotate: false
+  xy: 1, 61
+  size: 1160, 56
+  orig: 1160, 56
+  offset: 0, 0
+  index: -1
+walk
+  rotate: false
+  xy: 1, 1
+  size: 576, 58
+  orig: 576, 58
+  offset: 0, 0
+  index: -1
+front
+  rotate: false
+  xy: 1163, 67
+  size: 524, 50
+  orig: 524, 50
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,330 @@
+
+character_poses.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+character_maleAdventurer_attack0
+  rotate: false
+  xy: 1, 517
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_attack1
+  rotate: false
+  xy: 1, 259
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_attack2
+  rotate: false
+  xy: 195, 517
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_attackKick
+  rotate: false
+  xy: 1, 1
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_back
+  rotate: false
+  xy: 195, 259
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_behindBack
+  rotate: false
+  xy: 389, 517
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_cheer0
+  rotate: false
+  xy: 195, 1
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_cheer1
+  rotate: false
+  xy: 389, 259
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_climb0
+  rotate: false
+  xy: 583, 517
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_climb1
+  rotate: false
+  xy: 389, 1
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_down
+  rotate: false
+  xy: 583, 259
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_drag
+  rotate: false
+  xy: 777, 517
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_duck
+  rotate: false
+  xy: 583, 1
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_fall
+  rotate: false
+  xy: 777, 259
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_fallDown
+  rotate: false
+  xy: 777, 1
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+
+character_poses2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+character_maleAdventurer_hang
+  rotate: false
+  xy: 1, 517
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_hit
+  rotate: false
+  xy: 1, 259
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_hold
+  rotate: false
+  xy: 195, 517
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_hurt
+  rotate: false
+  xy: 1, 1
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_idle
+  rotate: false
+  xy: 195, 259
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_interact
+  rotate: false
+  xy: 389, 517
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_jump
+  rotate: false
+  xy: 195, 1
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_kick
+  rotate: false
+  xy: 389, 259
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_rope
+  rotate: false
+  xy: 583, 517
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_run0
+  rotate: false
+  xy: 389, 1
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_run1
+  rotate: false
+  xy: 583, 259
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_run2
+  rotate: false
+  xy: 777, 517
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_shove
+  rotate: false
+  xy: 583, 1
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_shoveBack
+  rotate: false
+  xy: 777, 259
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_show
+  rotate: false
+  xy: 777, 1
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+
+character_poses3.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+character_maleAdventurer_side
+  rotate: false
+  xy: 1, 517
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_slide
+  rotate: false
+  xy: 1, 259
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_switch0
+  rotate: false
+  xy: 195, 517
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_switch1
+  rotate: false
+  xy: 1, 1
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_talk
+  rotate: false
+  xy: 195, 259
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_think
+  rotate: false
+  xy: 389, 517
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_walk0
+  rotate: false
+  xy: 195, 1
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_walk1
+  rotate: false
+  xy: 389, 259
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_walk2
+  rotate: false
+  xy: 583, 517
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_walk3
+  rotate: false
+  xy: 389, 1
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_walk4
+  rotate: false
+  xy: 583, 259
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_walk5
+  rotate: false
+  xy: 777, 517
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_walk6
+  rotate: false
+  xy: 583, 1
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_walk7
+  rotate: false
+  xy: 777, 259
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
+character_maleAdventurer_wide
+  rotate: false
+  xy: 777, 1
+  size: 192, 256
+  orig: 192, 256
+  offset: 0, 0
+  index: -1
