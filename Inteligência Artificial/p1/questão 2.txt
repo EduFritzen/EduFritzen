@@ -1,0 +1,73 @@
+Busca em Profundidade
+1:
+Nós abertos: [A]
+Nós fechados: []
+
+2:
+Nós abertos: [B, D]
+Nós fechados: [A]
+
+3:
+Nós abertos: [E, F, J]
+Nós fechados: [A, D]
+
+4:
+Nós abertos: [K, L, G]
+Nós fechados: [A, D, E, F, J]
+
+5:
+Nós abertos: [M, H]
+Nós fechados: [A, D, E, F, J, G]
+
+6:
+Nós abertos: [N, I]
+Nós fechados: [A, D, E, F, J, G, H]
+
+          A
+        /   \
+       B     D
+      / \     \
+     E   F     J
+    / \   \
+   K   L   G
+          / \
+         M   H
+            / \
+           N   I
+
+Busca em Largura
+1:
+Nós abertos: [A]
+Nós fechados: []
+
+2:
+Nós abertos: [B, D]
+Nós fechados: [A]
+
+3:
+Nós abertos: [D, E]
+Nós fechados: [A, B]
+
+4:
+Nós abertos: [E, F]
+Nós fechados: [A, B, D]
+
+5:
+Nós abertos: [F, G]
+Nós fechados: [A, B, D, E]
+
+6:
+Nós abertos: [G, H, I]
+Nós fechados: [A, B, D, E, F]
+
+7:
+Nós abertos: [H, I, J]
+Nós fechados: [A, B, D, E, F, G]
+
+	  A
+        /   \
+       B     D
+      / \   / \
+     E   F G   H
+    /       \   \
+   J         I   J

@@ -1,0 +1,8 @@
+XYZ-CORP-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+	experimental 
+		FROM RFC1155-SMI;
+		
+	xyzCorp OBJECT IDENTIFIER ::= { experimental 57 }
+END

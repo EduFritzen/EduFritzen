@@ -1,0 +1,1 @@
+O banco de dados sakila um esquema normalizado que modela uma locadora de DVDs contendo dados de filmes, atores, relacionamento entre atores e filmes, também possui uma tabela de inventário que conecta filmes, lojas e aluguéis.

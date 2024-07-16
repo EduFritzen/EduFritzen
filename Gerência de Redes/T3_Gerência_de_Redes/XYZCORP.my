@@ -1,0 +1,47 @@
+XYZ-MIB DEFINITIONS ::= BEGIN
+IMPORTS
+	experimental, IpAddress, Counter, OBJECT-TYPE, Gauge  
+		FROM RFC1155-SMI
+
+	xyzCorp OBJECT IDENTIFIER ::= { experimental 57 }
+
+    fileServer OBJECT IDENTIFIER ::= { xyzCorp 5 }
+
+    fsSentFiles OBJECT-TYPE
+		SYNTAX Counter
+		ACCESS read-only
+		STATUS mandatory
+		DESCRIPTION "Arquivos enviados"
+    ::= { fileServer 1 }
+
+    fsReceivedFiles OBJECT-TYPE
+		SYNTAX Counter
+		ACCESS read-only
+		STATUS mandatory
+		DESCRIPTION "Arquivos recebidos"
+    ::= { fileServer 2 }
+
+    fsRemoteServer OBJECT-TYPE
+		SYNTAX IpAddress
+		ACCESS read-write
+		STATUS mandatory
+		DESCRIPTION "Endereco do servidor remoto"
+	::= { fileServer 3 }
+
+	fsRemoteServerPort OBJECT-TYPE
+		SYNTAX Gauge
+		ACCESS read-write
+		STATUS mandatory
+		DESCRIPTION "Porta do servidor remoto"
+	::= { fileServer 4 }
+
+	fsLocalServerPort OBJECT-TYPE
+		SYNTAX Gauge
+		ACCESS read-write
+		STATUS mandatory
+		DESCRIPTION "Porta do servidor local"
+	::= { fileServer 5 }
+
+END
+
+

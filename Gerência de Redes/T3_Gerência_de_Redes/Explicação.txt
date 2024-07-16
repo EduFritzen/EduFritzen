@@ -1,0 +1,4 @@
+Implementação de um agente SNMP
+Criar um agente SNMP utilizando o pacote NET-SNMP
+Deve-se utilizar a mesma definição da MIB do trabalho passado
+Assumir os mesmos grupos dos trabalhos passados, bem como informar o nome da equipe no código fonte a ser entregue

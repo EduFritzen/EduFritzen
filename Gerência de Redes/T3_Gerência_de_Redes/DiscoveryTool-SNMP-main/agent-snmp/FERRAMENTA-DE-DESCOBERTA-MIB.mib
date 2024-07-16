@@ -1,0 +1,123 @@
+FERRAMENTA-DE-DESCOBERTA-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+    MODULE-IDENTITY, OBJECT-TYPE, 
+    Integer32, TimeTicks,
+    IpAddress, experimental         FROM SNMPv2-SMI
+    SnmpAdminString                 FROM SNMP-FRAMEWORK-MIB
+;
+
+-- Identificação do módulo
+ferramentaDeDescoberta MODULE-IDENTITY
+    LAST-UPDATED "202311060000Z"
+    ORGANIZATION "Trabalho 3 de Gerencia"
+    CONTACT-INFO "Endereco de Contato"
+    DESCRIPTION "MIB para a ferramenta de autodescoberta"
+    REVISION "202311060000Z"
+    DESCRIPTION "Versao inicial"
+    ::= { experimental 5 }
+
+-- Definindo os objetos
+
+-- Objeto read-only para o histórico de descobertas
+historicoDeDescobertas OBJECT-TYPE
+    SYNTAX OCTET STRING
+    MAX-ACCESS read-only
+    STATUS current
+    DESCRIPTION "Historico de descobertas da ferramenta"
+    ::= { ferramentaDeDescoberta 1 }
+
+-- Objeto read-write para configurar o intervalo de verificação
+intervaloDeVerificacao OBJECT-TYPE
+    SYNTAX Integer32 (1..1440)  -- Intervalo em minutos
+    MAX-ACCESS read-write
+    STATUS current
+    DESCRIPTION "Intervalo de verificacao da ferramenta"
+    ::= { ferramentaDeDescoberta 2 }
+
+-- Objeto write-only para reiniciar a ferramenta
+reiniciarFerramenta OBJECT-TYPE
+    SYNTAX Integer32 (1..2)  -- 1: Reiniciar, 2: Não reiniciar
+    MAX-ACCESS read-write
+    STATUS current
+    DESCRIPTION "Reiniciar a ferramenta de autodescoberta"
+    ::= { ferramentaDeDescoberta 3 }
+
+-- Tabela para armazenar informações sobre dispositivos descobertos
+dispositivosTable OBJECT-TYPE
+    SYNTAX SEQUENCE OF DispositivoEntry
+    MAX-ACCESS not-accessible
+    STATUS current
+    DESCRIPTION "Tabela de dispositivos descobertos"
+    ::= { ferramentaDeDescoberta 4 }
+
+dispositivoEntry OBJECT-TYPE
+    SYNTAX DispositivoEntry
+    MAX-ACCESS not-accessible
+    STATUS current
+    DESCRIPTION "Entrada de dispositivo"
+    INDEX { dispositivoIndex }
+    ::= { dispositivosTable 1 }
+
+DispositivoEntry ::= SEQUENCE {
+    dispositivoIndex Integer32,
+    dispositivoIP IpAddress,
+    dispositivoMAC SnmpAdminString,
+    dispositivoFabricante SnmpAdminString,
+    --dispositivoEstado INTEGER { desconhecido(1), roteador(2), host(3), offline(4) },
+    dispositivoEstado Integer32,
+    dispositivoDescoberta TimeTicks,
+    dispositivoUltimoAcesso TimeTicks
+}
+
+dispositivoIndex OBJECT-TYPE
+    SYNTAX Integer32 (1..2147483647)
+    MAX-ACCESS not-accessible
+    STATUS current
+    DESCRIPTION "Indice do dispositivo"
+    ::= { dispositivoEntry 1 }
+
+dispositivoIP OBJECT-TYPE
+    SYNTAX IpAddress
+    MAX-ACCESS read-only
+    STATUS current
+    DESCRIPTION "Endereco IP do dispositivo"
+    ::= { dispositivoEntry 2 }
+
+dispositivoMAC OBJECT-TYPE
+    SYNTAX SnmpAdminString
+    MAX-ACCESS read-only
+    STATUS current
+    DESCRIPTION "Endereco MAC do dispositivo"
+    ::= { dispositivoEntry 3 }
+
+dispositivoFabricante OBJECT-TYPE
+    SYNTAX SnmpAdminString
+    MAX-ACCESS read-only
+    STATUS current
+    DESCRIPTION "Fabricante do dispositivo"
+    ::= { dispositivoEntry 4 }
+
+dispositivoEstado OBJECT-TYPE
+    SYNTAX INTEGER { desconhecido(1), roteador(2), host(3), offline(4) }
+    MAX-ACCESS read-only
+    STATUS current
+    DESCRIPTION "Estado do dispositivo"
+    ::= { dispositivoEntry 5 }
+
+dispositivoDescoberta OBJECT-TYPE
+    SYNTAX TimeTicks
+    MAX-ACCESS read-only
+    STATUS current
+    DESCRIPTION "Tempo de descoberta do dispositivo"
+    ::= { dispositivoEntry 6 }
+
+dispositivoUltimoAcesso OBJECT-TYPE
+    SYNTAX TimeTicks
+    MAX-ACCESS read-only
+    STATUS current
+    DESCRIPTION "Tempo do ultimo acesso ao dispositivo"
+    ::= { dispositivoEntry 7 }
+
+END
+

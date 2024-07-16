@@ -1,0 +1,69 @@
+O primeiro exemplo de programa é um servidor TCP simples, atende apenas um cliente por vez, envia a data e hora atual.  
+Ele inicia o ServerSocket para escutar na porta 59090.
+Ele entra no looping infinito para esperar por conexões de clientes.
+O server cria um Socket para se comunicar com o cliente.
+O objeto out é criado usando o PrintWriter, permitindo o envio de dados para o cliente.
+O parâmetro true é para o buffer do PrintWriter ser esvaziado após cada escrita  para garantir que os dados sejam enviado de imediato. 
+No lado do cliente, é iniciado um socket para se conectar ao servidor na porta 59090.
+O objeto in é criado usando o Scanner para receber dados enviador pelo server.
+
+O segundo exemplo de programa é um servidor que lida com vários clientes ao mesmo tempo e também lê informações dos clientes.
+Ele inicia o ServerSocket para escutar na porta 59898.
+Cria um pool de threads de tamanho 20.
+Ele entra no looping infinito para esperar por conexões de clientes, então cria uma nova thread é criada para lidar com esse cliente. A classe Capitalizae vai processar as solicitações do cliente.
+O server cria um Socket para se comunicar com o cliente.
+O método run vai ser o código que será executado pela thread, cria um Scanner para ler e um PrintWriter para escrever dados no socket.
+Entra num loop para ler cada linha enviada pelo cliente e enviar os mesmos dados em UpperCase para o cliente.
+Depois de concluído é fechado a conexão com o cliente.
+No lado do cliente, é inicializado um socket para se conctar ao servidor na porta 59898
+É criado dois objetos Scanner, um para ler os dados do próprio terminal do cliente e o outro para ler os dados recebidos do server.
+Também é criado um PrintWriter para enviar os dados do primeiro Scanner para o server.
+É printado o dado recebido pelo segundo Scanner.
+
+O terceiro exemplo de programa é um servidor que cria um jogo da velha e lida com o movimento dos jogadores, podendo ocorrer múltiplas partidas simultanieamente.
+Ele inicia o ServerSocket para escutar na porta 58901.
+Cria um pool de threads de tamanho 200.
+Ele entra no looping infinito para esperar por conexões de jogadores, então uma thread é criada para lidar com esse cliente criando uma instância da classe Player.
+A classe Game representa o estado do jogo, tabuleiro e lógicas.
+A classe Player, implementada dentro da classe Game, representa um jogador conectado ao servidor. Possui atributos de Socket, Scanner e PrintWritter.
+O método run executa a lógica principal, inicializa a comunicação principal com o cliente através do método setup.
+	Explicação de setup: Envia uma mensagem Welcome e a marca(X ou O) para o cliente e dependendo da marca envia a mensagem ao cliente de esperar o oponente conectar ou de ser sua vez.
+Após isso chama o método processCommands para lifar com os comandos do cliente.
+	Explicação de processCommands: é usado usado um scanner para ler os comandos enviados pelo cliente, se o movimento for QUIT ele retorna ou processa o movimento do jogador com a função processMovaCommand.
+	Explicação de processMoveCommand: realiza as ações para lidar com a movimentação e atualizar o tabuleiro, e um PrintWritter para enviar que o movimento é válido para o cliente e informa que foi movimentado para o oponente. Além disso, verifica se a vitória ou o tabuleiro foi todo preenchido(empate) e envia as mensagens necessárias tanto para o cliente quanto para o oponente.
+Voltando para o resto da run, é tratado a exceção e com finally verifica a conexão do oponente, se for null, informa com um printwritter que o outro player saiu e facha a conexão.
+No lado do cliente, é inicializado um socket para se conectar ao servidor na porta 58901.
+É criado Scanner e PrintWriter para ler e enviar mensagens para o server.
+Configura o funcionamento da interface gráfica do jogo.
+Codifica para quando o mouse for pressionado no tabulerio, o PrintWriter envia para o servidor o movimento escolhido.
+O método play irá lidar com as jogadas do jogo e suas consequentes interações com o servidor, primeiramente pega a resposta do server com scanner para a marca do jogador. 
+Ainda dentro do método play, entra em um loop enquanto houver mensagens do server. Ele lê a mensagem com Scanner e há varias condicionais para tratar cada tipo de mensagem (atualizações no tabuleiro, casos de vitória, derrota ou empate e quando o oponente saiu). Finalmente, quando a mensagem indica que o oponente saiu o loop é interrompido.
+
+O quarto exemplo implementa um chat de mensagens e vários clientes podem se conectar e enviar mensagens entre si.
+É criado um HashSet para armazenar nomes únicos dos clientes e um HashSet de PrintWriter para enviar dados aos clientes.
+Cria um pool de threads de tamanho 500.
+Ele inicia o ServerSocket para escutar na porta 59001.
+Ele entra no looping infinito para esperar por conexões de clientes, então uma thread é criada para lidar com o cliente através da classe Handler.
+A classe Handler inicia um Socket, um Scanner e um PrintWriter.
+O server envia uma mensagem para o cliente enviar seu nome, pega a resposta do cliente com um Scaner, verifica se o nome é nulo e faz um verificação sincronizada para garantir que apenas uma thread por vez possa adicionar na lista de nomes.
+O server envia uma mensagem de que o nome foi aceito para o cliente e notifica todos os clientes conectados que um novo cliente entrou através da lista de PrintWriter.
+Depois disso é adiciocionado o PrintWriter do novo cliente na lista de writers.
+Após o registro, entra-se em outro loop infinito para aguardar mensagens do cliente, se ele receber /quit o loop é interrompido, senão a mensagem é retransmitida para todos os clientes incluindo ele mesmo.
+É feito o tratamento de exceções e no bloco finally, com alguns condicionais, é removido o PrintWriter associado e remove o nome do cliente da lista.
+Por fim, envia uma mensagem para todos os outros clientes conectados a desconexão do cliente e fecha a conexão.
+No lado do cliente, é criado uma instância de ChatClient com o IP fornecido, configura o comportamento de fechar a janela para encerrar o programa, setá visivel a interface gráfica e chama o método run.
+Na classe ChatClient é definido um Scanner para receber dados do server e um PrintWriter para enviar dados para o servidor, define um JFreame(uma janela gráfica), um JTextField(campo de texto que o usuário pode inserir texto[máximo de 50 letras]), um JTextPane(área de texto editável). 
+O método construtor define o endereço do servidor com o argumento passado, depois configura a interface gráfica: textField setado inicialmente não editável, adiciona o campo de texto na parte inferior da janela, adiciona um painel de rolagem, e define o tamanho da janela. Ainda no construtor é definido um addActionListener para detectar quando o cliente presiona enter no campo de texto, quando isso acontece é chamado o método actionPerformed para enviar com um PrintWriter a mensagem do campo de texto para o servidor.
+O método run é inicializado um socket para se conectar ao servidor na porta 59001.
+É criado um Scanner para ler dados do servidor e um PrintWritter para enviar dados ao servidor.
+É feito um loop que lê as mensagens do servidor e começa a verificação do tipo de mensagem.
+Se for SUBMITNAME, envia o nome digitado para o servidor com o PrintWriter, o nome é obtido usando a função getName que informa uma caixa de dialogo de entrada para o cliente inserir o nome.
+Se for NAMEACCEPTED, atualiza o título da janela com o nome e torna editável o campo de texto.
+Se for SYSTEM_MESSAGE seta a cor do texto vermelho ou se a mensagem ser JOINED seta para verde, cria um SimpleAttributeSet para a mensagem e chama setForeground para definir a cor do texto e adiciona a mensagem ao JTextPane(área do texto) através do método appendMessage.
+	appendMessage: adiciona uma mensagem na área de texto usando os atributos passados.
+Se for MESSAGE, procura o índice da ocorrência de ':' para poder separar o nome do cliente e sua mensagem, para o nome define a cor azul e fonte em negrito e chama appendMessage, para a mensagem deixa em preto padrão e chama appendMessage.
+Por fim, o bloco finally descarta o frame, garantindo que seja fechado corretamente.
+
+
+
+

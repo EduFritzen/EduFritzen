@@ -1,0 +1,1925 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/eduar/ontologies/2023/4/eduF-virus"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/eduar/ontologies/2023/4/eduF-virus">
+    <Prefix name="" IRI="http://www.semanticweb.org/eduar/ontologies/2023/4/eduF-virus/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Adenoviridae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alphacoronavirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alphapapillomavirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alpharetrovirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alterações_Metabólicas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alterações_Sensoriais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atadenovirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aviadenovirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Betacoronavirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Betapapillomavirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Busca_Vírus_Orthomyxoviridae_e_Retroviridae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Busca_Vírus_do_tipo_Alphacoronavirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Busca_por_Hospedeiros"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Busca_por_sintomas_gerais_e_genitais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Busca_por_sintomas_gripais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Caliciviridae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coronaviridae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cytomegalovirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enterovirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Família_com_o_maior_número_de_Sintomas_Frequentes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Família_com_o_menor_número_de_Sintomas_Frequentes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flaviviridae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flavivirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gammacoronavirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gammapapillomavirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gammaretrovirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hepacivirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hepatovirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Herpesviridae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hospedeiro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Influenzavirus_A"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Influenzavirus_B"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Influenzavirus_C"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lagovirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lentivirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mastadenovirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Morbillivirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Norovirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Número_de_Sintomas_Frequentes_em_cada_família_de_vírus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orthomyxoviridae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Outros_Sintomas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Papillomaviridae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paramyxoviridae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paramyxovirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pestivirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Picornaviridae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pneumovirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Retroviridae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rhinovirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sapovirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Simplexvirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sintomas_Gastrointestinais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sintomas_Genitais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sintomas_Gerais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sintomas_Gripais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sintomas_Respiratórios"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Varicellovirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Viroses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vírus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vírus_Ifluenzavirus_A_e_Simplexivirus_que_possuem_gripe_como_sintoma_comum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vírus_Influenza_A__que_possuem_Porcos_e_Humanos_como_hospedeiros"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vírus_Influenza_A_que_possuem_Aves_como_hospedeiros"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vírus_Influenza_A_que_possuem_sintomas_Febre_e_não_Congestão"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vírus_Inlfuenza_A_que_possuem_os_sintomas_Febre_e_Falta_de_ar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vírus_Simplexvirus_que_possuem_o_sintoma_Verrugas_Genitais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vírus_Simplexvirus_que_possuem_primatas_como_hospedeiro"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Tem_Hospedeiro"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#É_Hospedeiro"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NumSintomasFrequentes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ALV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ALV-J"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ASLV-A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anormalidade_do_exame_de_Papanicolaou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AvCoV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aves"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BRSV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BVDV-2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BWCoV_SW1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BoHV-1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bovine_HV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bovine_adenovirus_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bovinos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CAV-9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CAdV-1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CDV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CSFV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CaSaV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Camelos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cavalos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coelhos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Congestão"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cães"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DSV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dengue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diarreia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diarréia_viral_bovina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Displasia_cervical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Doença_das_Fronteiras_BDV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dor_abdominal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dor_de_cabeça"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dor_de_garganta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dores_musculares"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EBHSV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EBHSV2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EHV-9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EIAV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EV-71"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Espirro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FAdV-A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FAdV-B"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FAdV-D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FIV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fadiga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fadiga_crônica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Falta_de_ar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FeLV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Febre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FrAdV-1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GB_virus_C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gatos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gripe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gânglios_linfáticos_inchados"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#H1N1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#H3N2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#H5N1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#H7N9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HAV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HAdV-B"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HAdV-C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HCMV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HCoV-229E"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HCoV-NL63"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HEV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HIV-1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HPIVs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HPV11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HPV16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HPV18"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HPV20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HPV38"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HPV4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HPV48"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HPV5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HPV50"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HPV6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HPV75"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HPV8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HRSV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HRV-A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HRV-B"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HRV-C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HRV-D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HSV-1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HSV-2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hepatitis_C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hepatitis_G"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HerpesVírus_Equino_EHV-1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HuSaV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Humanos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IBV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Infecções_Oportunistas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LDV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MCMV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MERS-CoV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MLV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MPV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MSCV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MeV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mo-MLV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Morcegos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mosquitos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MuSaV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MuV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nariz_escorrendo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norwalk_virus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Náusea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ORSV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Olho_Vermelho"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ovine_adenovirus_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PDV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PEDV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PV1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PV2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Perda_de_olfato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Perda_de_paladar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Perda_de_peso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PoSaV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PorCoV_HKU15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Porcos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Primatas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RHDV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RHDV2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RPV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RSV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ratos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RhCMV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Roedores"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SARS-CoV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SARS-CoV-2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SAdV-5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SCMV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SMV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Suínos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TAdV-A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TCoV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TGEV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tosse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Varicela_zoster_VZV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Verrugas_genitais"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Verrugas_orais"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vômito"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WNV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YFV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zika"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B/Victoria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B/Yamagata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C/Johannesburg/1/66"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C/Sao_Paulo/378/82"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Busca_Vírus_Orthomyxoviridae_e_Retroviridae"/>
+        <ObjectUnionOf>
+            <Class IRI="#Orthomyxoviridae"/>
+            <Class IRI="#Retroviridae"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Busca_Vírus_do_tipo_Alphacoronavirus"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Alphacoronavirus"/>
+            <Class IRI="#Coronaviridae"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Busca_por_Hospedeiros"/>
+        <Class IRI="#Hospedeiro"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Busca_por_sintomas_gerais_e_genitais"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Viroses"/>
+            <ObjectUnionOf>
+                <Class IRI="#Sintomas_Genitais"/>
+                <Class IRI="#Sintomas_Gerais"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Busca_por_sintomas_gripais"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Sintomas_Gripais"/>
+            <Class IRI="#Viroses"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Família_com_o_maior_número_de_Sintomas_Frequentes"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Vírus"/>
+            <DataMaxCardinality cardinality="8">
+                <DataProperty IRI="#NumSintomasFrequentes"/>
+            </DataMaxCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Família_com_o_menor_número_de_Sintomas_Frequentes"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Vírus"/>
+            <DataMinCardinality cardinality="1">
+                <DataProperty IRI="#NumSintomasFrequentes"/>
+            </DataMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Número_de_Sintomas_Frequentes_em_cada_família_de_vírus"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Vírus"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#NumSintomasFrequentes"/>
+                <Datatype abbreviatedIRI="rdfs:Literal"/>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Vírus_Ifluenzavirus_A_e_Simplexivirus_que_possuem_gripe_como_sintoma_comum"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Herpesviridae"/>
+                <Class IRI="#Simplexvirus"/>
+                <Class IRI="#Vírus"/>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#Possui_Sintoma"/>
+                    <NamedIndividual IRI="#Gripe"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Influenzavirus_A"/>
+                <Class IRI="#Orthomyxoviridae"/>
+                <Class IRI="#Vírus"/>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#Possui_Sintoma"/>
+                    <NamedIndividual IRI="#Gripe"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Vírus_Influenza_A__que_possuem_Porcos_e_Humanos_como_hospedeiros"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Influenzavirus_A"/>
+            <Class IRI="#Orthomyxoviridae"/>
+            <Class IRI="#Vírus"/>
+            <ObjectIntersectionOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#Tem_Hospedeiro"/>
+                    <NamedIndividual IRI="#Humanos"/>
+                </ObjectHasValue>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#Tem_Hospedeiro"/>
+                    <NamedIndividual IRI="#Porcos"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Vírus_Influenza_A_que_possuem_Aves_como_hospedeiros"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Influenzavirus_A"/>
+            <Class IRI="#Orthomyxoviridae"/>
+            <Class IRI="#Vírus"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#Tem_Hospedeiro"/>
+                <NamedIndividual IRI="#Aves"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Vírus_Influenza_A_que_possuem_sintomas_Febre_e_não_Congestão"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Influenzavirus_A"/>
+            <Class IRI="#Orthomyxoviridae"/>
+            <Class IRI="#Vírus"/>
+            <ObjectComplementOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#Possui_Sintoma"/>
+                    <NamedIndividual IRI="#Congestão"/>
+                </ObjectHasValue>
+            </ObjectComplementOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#Possui_Sintoma"/>
+                <NamedIndividual IRI="#Febre"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Vírus_Inlfuenza_A_que_possuem_os_sintomas_Febre_e_Falta_de_ar"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Influenzavirus_A"/>
+            <Class IRI="#Orthomyxoviridae"/>
+            <Class IRI="#Vírus"/>
+            <ObjectIntersectionOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#Possui_Sintoma"/>
+                    <NamedIndividual IRI="#Falta_de_ar"/>
+                </ObjectHasValue>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#Possui_Sintoma"/>
+                    <NamedIndividual IRI="#Febre"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Vírus_Simplexvirus_que_possuem_o_sintoma_Verrugas_Genitais"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Herpesviridae"/>
+            <Class IRI="#Simplexvirus"/>
+            <Class IRI="#Vírus"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#Possui_Sintoma"/>
+                <NamedIndividual IRI="#Verrugas_genitais"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Vírus_Simplexvirus_que_possuem_primatas_como_hospedeiro"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Herpesviridae"/>
+            <Class IRI="#Simplexvirus"/>
+            <Class IRI="#Vírus"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#Tem_Hospedeiro"/>
+                <NamedIndividual IRI="#Primatas"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Adenoviridae"/>
+        <Class IRI="#Vírus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adenoviridae"/>
+        <DataExactCardinality cardinality="5">
+            <DataProperty IRI="#NumSintomasFrequentes"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alphacoronavirus"/>
+        <Class IRI="#Coronaviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alphapapillomavirus"/>
+        <Class IRI="#Papillomaviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alpharetrovirus"/>
+        <Class IRI="#Retroviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alterações_Metabólicas"/>
+        <Class IRI="#Viroses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alterações_Sensoriais"/>
+        <Class IRI="#Viroses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atadenovirus"/>
+        <Class IRI="#Adenoviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aviadenovirus"/>
+        <Class IRI="#Adenoviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Betacoronavirus"/>
+        <Class IRI="#Coronaviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Betapapillomavirus"/>
+        <Class IRI="#Papillomaviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caliciviridae"/>
+        <Class IRI="#Vírus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caliciviridae"/>
+        <DataExactCardinality cardinality="4">
+            <DataProperty IRI="#NumSintomasFrequentes"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coronaviridae"/>
+        <Class IRI="#Vírus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coronaviridae"/>
+        <DataExactCardinality cardinality="8">
+            <DataProperty IRI="#NumSintomasFrequentes"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cytomegalovirus"/>
+        <Class IRI="#Herpesviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Enterovirus"/>
+        <Class IRI="#Picornaviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flaviviridae"/>
+        <Class IRI="#Vírus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flaviviridae"/>
+        <DataExactCardinality cardinality="5">
+            <DataProperty IRI="#NumSintomasFrequentes"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flavivirus"/>
+        <Class IRI="#Flaviviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gammacoronavirus"/>
+        <Class IRI="#Coronaviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gammapapillomavirus"/>
+        <Class IRI="#Papillomaviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gammaretrovirus"/>
+        <Class IRI="#Retroviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hepacivirus"/>
+        <Class IRI="#Flaviviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hepatovirus"/>
+        <Class IRI="#Picornaviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Herpesviridae"/>
+        <Class IRI="#Vírus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Herpesviridae"/>
+        <DataExactCardinality cardinality="5">
+            <DataProperty IRI="#NumSintomasFrequentes"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Influenzavirus_A"/>
+        <Class IRI="#Orthomyxoviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Influenzavirus_B"/>
+        <Class IRI="#Orthomyxoviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Influenzavirus_C"/>
+        <Class IRI="#Orthomyxoviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lagovirus"/>
+        <Class IRI="#Caliciviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lentivirus"/>
+        <Class IRI="#Retroviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mastadenovirus"/>
+        <Class IRI="#Adenoviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Morbillivirus"/>
+        <Class IRI="#Paramyxoviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Norovirus"/>
+        <Class IRI="#Caliciviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orthomyxoviridae"/>
+        <Class IRI="#Vírus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orthomyxoviridae"/>
+        <DataExactCardinality cardinality="6">
+            <DataProperty IRI="#NumSintomasFrequentes"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Outros_Sintomas"/>
+        <Class IRI="#Viroses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Papillomaviridae"/>
+        <Class IRI="#Vírus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Papillomaviridae"/>
+        <DataExactCardinality cardinality="4">
+            <DataProperty IRI="#NumSintomasFrequentes"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paramyxoviridae"/>
+        <Class IRI="#Vírus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paramyxoviridae"/>
+        <DataExactCardinality cardinality="5">
+            <DataProperty IRI="#NumSintomasFrequentes"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paramyxovirus"/>
+        <Class IRI="#Paramyxoviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pestivirus"/>
+        <Class IRI="#Flaviviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Picornaviridae"/>
+        <Class IRI="#Vírus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Picornaviridae"/>
+        <DataExactCardinality cardinality="6">
+            <DataProperty IRI="#NumSintomasFrequentes"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pneumovirus"/>
+        <Class IRI="#Paramyxoviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Retroviridae"/>
+        <Class IRI="#Vírus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Retroviridae"/>
+        <DataExactCardinality cardinality="6">
+            <DataProperty IRI="#NumSintomasFrequentes"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rhinovirus"/>
+        <Class IRI="#Picornaviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sapovirus"/>
+        <Class IRI="#Caliciviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Simplexvirus"/>
+        <Class IRI="#Herpesviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sintomas_Gastrointestinais"/>
+        <Class IRI="#Viroses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sintomas_Genitais"/>
+        <Class IRI="#Viroses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sintomas_Gerais"/>
+        <Class IRI="#Viroses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sintomas_Gripais"/>
+        <Class IRI="#Viroses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sintomas_Respiratórios"/>
+        <Class IRI="#Viroses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Varicellovirus"/>
+        <Class IRI="#Herpesviridae"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Alpharetrovirus"/>
+        <NamedIndividual IRI="#ALV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alpharetrovirus"/>
+        <NamedIndividual IRI="#ALV-J"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alpharetrovirus"/>
+        <NamedIndividual IRI="#ASLV-A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Outros_Sintomas"/>
+        <NamedIndividual IRI="#Anormalidade_do_exame_de_Papanicolaou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gammacoronavirus"/>
+        <NamedIndividual IRI="#AvCoV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hospedeiro"/>
+        <NamedIndividual IRI="#Aves"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pneumovirus"/>
+        <NamedIndividual IRI="#BRSV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pestivirus"/>
+        <NamedIndividual IRI="#BVDV-2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gammacoronavirus"/>
+        <NamedIndividual IRI="#BWCoV_SW1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Varicellovirus"/>
+        <NamedIndividual IRI="#BoHV-1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hepacivirus"/>
+        <NamedIndividual IRI="#Bovine_HV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atadenovirus"/>
+        <NamedIndividual IRI="#Bovine_adenovirus_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hospedeiro"/>
+        <NamedIndividual IRI="#Bovinos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Enterovirus"/>
+        <NamedIndividual IRI="#CAV-9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atadenovirus"/>
+        <NamedIndividual IRI="#CAdV-1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Morbillivirus"/>
+        <NamedIndividual IRI="#CDV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pestivirus"/>
+        <NamedIndividual IRI="#CSFV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sapovirus"/>
+        <NamedIndividual IRI="#CaSaV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hospedeiro"/>
+        <NamedIndividual IRI="#Camelos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hospedeiro"/>
+        <NamedIndividual IRI="#Cavalos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hospedeiro"/>
+        <NamedIndividual IRI="#Coelhos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Respiratórios"/>
+        <NamedIndividual IRI="#Congestão"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hospedeiro"/>
+        <NamedIndividual IRI="#Cães"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Norovirus"/>
+        <NamedIndividual IRI="#DSV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Flavivirus"/>
+        <NamedIndividual IRI="#Dengue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Gastrointestinais"/>
+        <NamedIndividual IRI="#Diarreia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pestivirus"/>
+        <NamedIndividual IRI="#Diarréia_viral_bovina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Outros_Sintomas"/>
+        <NamedIndividual IRI="#Displasia_cervical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pestivirus"/>
+        <NamedIndividual IRI="#Doença_das_Fronteiras_BDV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Gerais"/>
+        <NamedIndividual IRI="#Dor_abdominal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Gerais"/>
+        <NamedIndividual IRI="#Dor_de_cabeça"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Gripais"/>
+        <NamedIndividual IRI="#Dor_de_garganta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Gerais"/>
+        <NamedIndividual IRI="#Dores_musculares"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lagovirus"/>
+        <NamedIndividual IRI="#EBHSV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lagovirus"/>
+        <NamedIndividual IRI="#EBHSV2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Varicellovirus"/>
+        <NamedIndividual IRI="#EHV-9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lentivirus"/>
+        <NamedIndividual IRI="#EIAV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Enterovirus"/>
+        <NamedIndividual IRI="#EV-71"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Respiratórios"/>
+        <NamedIndividual IRI="#Espirro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aviadenovirus"/>
+        <NamedIndividual IRI="#FAdV-A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aviadenovirus"/>
+        <NamedIndividual IRI="#FAdV-B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aviadenovirus"/>
+        <NamedIndividual IRI="#FAdV-D"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lentivirus"/>
+        <NamedIndividual IRI="#FIV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Gerais"/>
+        <NamedIndividual IRI="#Fadiga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Outros_Sintomas"/>
+        <NamedIndividual IRI="#Fadiga_crônica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Respiratórios"/>
+        <NamedIndividual IRI="#Falta_de_ar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gammaretrovirus"/>
+        <NamedIndividual IRI="#FeLV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Gripais"/>
+        <NamedIndividual IRI="#Febre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atadenovirus"/>
+        <NamedIndividual IRI="#FrAdV-1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hepacivirus"/>
+        <NamedIndividual IRI="#GB_virus_C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hospedeiro"/>
+        <NamedIndividual IRI="#Gatos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Gripais"/>
+        <NamedIndividual IRI="#Gripe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Outros_Sintomas"/>
+        <NamedIndividual IRI="#Gânglios_linfáticos_inchados"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Influenzavirus_A"/>
+        <NamedIndividual IRI="#H1N1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Influenzavirus_A"/>
+        <NamedIndividual IRI="#H3N2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Influenzavirus_A"/>
+        <NamedIndividual IRI="#H5N1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Influenzavirus_A"/>
+        <NamedIndividual IRI="#H7N9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hepatovirus"/>
+        <NamedIndividual IRI="#HAV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mastadenovirus"/>
+        <NamedIndividual IRI="#HAdV-B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mastadenovirus"/>
+        <NamedIndividual IRI="#HAdV-C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cytomegalovirus"/>
+        <NamedIndividual IRI="#HCMV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alphacoronavirus"/>
+        <NamedIndividual IRI="#HCoV-229E"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alphacoronavirus"/>
+        <NamedIndividual IRI="#HCoV-NL63"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hepatovirus"/>
+        <NamedIndividual IRI="#HEV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lentivirus"/>
+        <NamedIndividual IRI="#HIV-1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Paramyxovirus"/>
+        <NamedIndividual IRI="#HPIVs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alphapapillomavirus"/>
+        <NamedIndividual IRI="#HPV11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alphapapillomavirus"/>
+        <NamedIndividual IRI="#HPV16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alphapapillomavirus"/>
+        <NamedIndividual IRI="#HPV18"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Betapapillomavirus"/>
+        <NamedIndividual IRI="#HPV20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Betapapillomavirus"/>
+        <NamedIndividual IRI="#HPV38"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gammapapillomavirus"/>
+        <NamedIndividual IRI="#HPV4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gammapapillomavirus"/>
+        <NamedIndividual IRI="#HPV48"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Betapapillomavirus"/>
+        <NamedIndividual IRI="#HPV5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gammapapillomavirus"/>
+        <NamedIndividual IRI="#HPV50"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alphapapillomavirus"/>
+        <NamedIndividual IRI="#HPV6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gammapapillomavirus"/>
+        <NamedIndividual IRI="#HPV75"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Betapapillomavirus"/>
+        <NamedIndividual IRI="#HPV8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pneumovirus"/>
+        <NamedIndividual IRI="#HRSV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rhinovirus"/>
+        <NamedIndividual IRI="#HRV-A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rhinovirus"/>
+        <NamedIndividual IRI="#HRV-B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rhinovirus"/>
+        <NamedIndividual IRI="#HRV-C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rhinovirus"/>
+        <NamedIndividual IRI="#HRV-D"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Simplexvirus"/>
+        <NamedIndividual IRI="#HSV-1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Simplexvirus"/>
+        <NamedIndividual IRI="#HSV-2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hepacivirus"/>
+        <NamedIndividual IRI="#Hepatitis_C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hepacivirus"/>
+        <NamedIndividual IRI="#Hepatitis_G"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Varicellovirus"/>
+        <NamedIndividual IRI="#HerpesVírus_Equino_EHV-1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sapovirus"/>
+        <NamedIndividual IRI="#HuSaV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hospedeiro"/>
+        <NamedIndividual IRI="#Humanos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gammacoronavirus"/>
+        <NamedIndividual IRI="#IBV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Outros_Sintomas"/>
+        <NamedIndividual IRI="#Infecções_Oportunistas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Norovirus"/>
+        <NamedIndividual IRI="#LDV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cytomegalovirus"/>
+        <NamedIndividual IRI="#MCMV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Betacoronavirus"/>
+        <NamedIndividual IRI="#MERS-CoV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gammaretrovirus"/>
+        <NamedIndividual IRI="#MLV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pneumovirus"/>
+        <NamedIndividual IRI="#MPV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gammaretrovirus"/>
+        <NamedIndividual IRI="#MSCV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Morbillivirus"/>
+        <NamedIndividual IRI="#MeV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gammaretrovirus"/>
+        <NamedIndividual IRI="#Mo-MLV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hospedeiro"/>
+        <NamedIndividual IRI="#Morcegos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hospedeiro"/>
+        <NamedIndividual IRI="#Mosquitos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sapovirus"/>
+        <NamedIndividual IRI="#MuSaV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Paramyxovirus"/>
+        <NamedIndividual IRI="#MuV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Respiratórios"/>
+        <NamedIndividual IRI="#Nariz_escorrendo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Norovirus"/>
+        <NamedIndividual IRI="#Norwalk_virus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Gastrointestinais"/>
+        <NamedIndividual IRI="#Náusea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pneumovirus"/>
+        <NamedIndividual IRI="#ORSV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Outros_Sintomas"/>
+        <NamedIndividual IRI="#Olho_Vermelho"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atadenovirus"/>
+        <NamedIndividual IRI="#Ovine_adenovirus_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Morbillivirus"/>
+        <NamedIndividual IRI="#PDV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alphacoronavirus"/>
+        <NamedIndividual IRI="#PEDV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Enterovirus"/>
+        <NamedIndividual IRI="#PV1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Enterovirus"/>
+        <NamedIndividual IRI="#PV2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alterações_Sensoriais"/>
+        <NamedIndividual IRI="#Perda_de_olfato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alterações_Sensoriais"/>
+        <NamedIndividual IRI="#Perda_de_paladar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alterações_Metabólicas"/>
+        <NamedIndividual IRI="#Perda_de_peso"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sapovirus"/>
+        <NamedIndividual IRI="#PoSaV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gammacoronavirus"/>
+        <NamedIndividual IRI="#PorCoV_HKU15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hospedeiro"/>
+        <NamedIndividual IRI="#Porcos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hospedeiro"/>
+        <NamedIndividual IRI="#Primatas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lagovirus"/>
+        <NamedIndividual IRI="#RHDV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lagovirus"/>
+        <NamedIndividual IRI="#RHDV2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Morbillivirus"/>
+        <NamedIndividual IRI="#RPV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alpharetrovirus"/>
+        <NamedIndividual IRI="#RSV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hospedeiro"/>
+        <NamedIndividual IRI="#Ratos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cytomegalovirus"/>
+        <NamedIndividual IRI="#RhCMV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hospedeiro"/>
+        <NamedIndividual IRI="#Roedores"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Betacoronavirus"/>
+        <NamedIndividual IRI="#SARS-CoV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Betacoronavirus"/>
+        <NamedIndividual IRI="#SARS-CoV-2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mastadenovirus"/>
+        <NamedIndividual IRI="#SAdV-5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cytomegalovirus"/>
+        <NamedIndividual IRI="#SCMV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lentivirus"/>
+        <NamedIndividual IRI="#SIV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Norovirus"/>
+        <NamedIndividual IRI="#SMV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hospedeiro"/>
+        <NamedIndividual IRI="#Suínos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aviadenovirus"/>
+        <NamedIndividual IRI="#TAdV-A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Betacoronavirus"/>
+        <NamedIndividual IRI="#TCoV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alphacoronavirus"/>
+        <NamedIndividual IRI="#TGEV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Respiratórios"/>
+        <NamedIndividual IRI="#Tosse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Varicellovirus"/>
+        <NamedIndividual IRI="#Varicela_zoster_VZV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Genitais"/>
+        <NamedIndividual IRI="#Verrugas_genitais"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Genitais"/>
+        <NamedIndividual IRI="#Verrugas_orais"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sintomas_Gastrointestinais"/>
+        <NamedIndividual IRI="#Vômito"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Flavivirus"/>
+        <NamedIndividual IRI="#WNV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Flavivirus"/>
+        <NamedIndividual IRI="#YFV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Flavivirus"/>
+        <NamedIndividual IRI="#Zika"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Influenzavirus_B"/>
+        <NamedIndividual IRI="#B/Victoria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Influenzavirus_B"/>
+        <NamedIndividual IRI="#B/Yamagata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Influenzavirus_C"/>
+        <NamedIndividual IRI="#C/Johannesburg/1/66"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Influenzavirus_C"/>
+        <NamedIndividual IRI="#C/Sao_Paulo/378/82"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#É_Hospedeiro"/>
+        <NamedIndividual IRI="#Aves"/>
+        <NamedIndividual IRI="#H5N1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#É_Hospedeiro"/>
+        <NamedIndividual IRI="#Aves"/>
+        <NamedIndividual IRI="#H7N9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#H1N1"/>
+        <NamedIndividual IRI="#Fadiga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#H1N1"/>
+        <NamedIndividual IRI="#Febre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#H1N1"/>
+        <NamedIndividual IRI="#Gripe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#H1N1"/>
+        <NamedIndividual IRI="#Tosse"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Tem_Hospedeiro"/>
+        <NamedIndividual IRI="#H1N1"/>
+        <NamedIndividual IRI="#Humanos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Tem_Hospedeiro"/>
+        <NamedIndividual IRI="#H1N1"/>
+        <NamedIndividual IRI="#Porcos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#H3N2"/>
+        <NamedIndividual IRI="#Congestão"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#H3N2"/>
+        <NamedIndividual IRI="#Dor_de_cabeça"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#H3N2"/>
+        <NamedIndividual IRI="#Febre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Tem_Hospedeiro"/>
+        <NamedIndividual IRI="#H3N2"/>
+        <NamedIndividual IRI="#Humanos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#H5N1"/>
+        <NamedIndividual IRI="#Dor_de_garganta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#H5N1"/>
+        <NamedIndividual IRI="#Falta_de_ar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#H5N1"/>
+        <NamedIndividual IRI="#Febre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#H5N1"/>
+        <NamedIndividual IRI="#Tosse"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Tem_Hospedeiro"/>
+        <NamedIndividual IRI="#H5N1"/>
+        <NamedIndividual IRI="#Aves"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Tem_Hospedeiro"/>
+        <NamedIndividual IRI="#H5N1"/>
+        <NamedIndividual IRI="#Humanos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#H7N9"/>
+        <NamedIndividual IRI="#Dores_musculares"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#H7N9"/>
+        <NamedIndividual IRI="#Fadiga_crônica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#H7N9"/>
+        <NamedIndividual IRI="#Falta_de_ar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#H7N9"/>
+        <NamedIndividual IRI="#Febre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Tem_Hospedeiro"/>
+        <NamedIndividual IRI="#H7N9"/>
+        <NamedIndividual IRI="#Aves"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Tem_Hospedeiro"/>
+        <NamedIndividual IRI="#H7N9"/>
+        <NamedIndividual IRI="#Humanos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#HSV-1"/>
+        <NamedIndividual IRI="#Gripe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#HSV-1"/>
+        <NamedIndividual IRI="#Verrugas_orais"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Tem_Hospedeiro"/>
+        <NamedIndividual IRI="#HSV-1"/>
+        <NamedIndividual IRI="#Humanos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Tem_Hospedeiro"/>
+        <NamedIndividual IRI="#HSV-1"/>
+        <NamedIndividual IRI="#Primatas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#HSV-2"/>
+        <NamedIndividual IRI="#Gripe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#HSV-2"/>
+        <NamedIndividual IRI="#Infecções_Oportunistas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Sintoma"/>
+        <NamedIndividual IRI="#HSV-2"/>
+        <NamedIndividual IRI="#Verrugas_genitais"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Tem_Hospedeiro"/>
+        <NamedIndividual IRI="#HSV-2"/>
+        <NamedIndividual IRI="#Humanos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Tem_Hospedeiro"/>
+        <NamedIndividual IRI="#HSV-2"/>
+        <NamedIndividual IRI="#Primatas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#É_Hospedeiro"/>
+        <NamedIndividual IRI="#Humanos"/>
+        <NamedIndividual IRI="#H1N1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#É_Hospedeiro"/>
+        <NamedIndividual IRI="#Humanos"/>
+        <NamedIndividual IRI="#H3N2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#É_Hospedeiro"/>
+        <NamedIndividual IRI="#Humanos"/>
+        <NamedIndividual IRI="#H5N1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#É_Hospedeiro"/>
+        <NamedIndividual IRI="#Humanos"/>
+        <NamedIndividual IRI="#H7N9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#É_Hospedeiro"/>
+        <NamedIndividual IRI="#Porcos"/>
+        <NamedIndividual IRI="#Porcos"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Tem_Hospedeiro"/>
+        <ObjectProperty IRI="#É_Hospedeiro"/>
+    </InverseObjectProperties>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NumSintomasFrequentes"/>
+        <Class IRI="#Vírus"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#NumSintomasFrequentes"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NumSintomasFrequentes</IRI>
+        <Literal>common symptoms associated with each virus family</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

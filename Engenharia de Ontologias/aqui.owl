@@ -1,0 +1,2396 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#"
+     xml:base="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Esta_Presente_Em -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Esta_Presente_Em"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Faz_Parte_De -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Faz_Parte_De"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Antecedido_Por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Antecedido_Por"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Especificado_Por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Especificado_Por"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Seguido_De -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Seguido_De"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Carga_Horária -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Carga_Horária">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="pt">Total de horas que uma disciplina possui para ser efetuada.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Carga Horária</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Créditos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Créditos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="pt">Número de créditos que a disciplina entrega após ser efetuada.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Créditos</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Código -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Código">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">Toda disciplina possui um código único.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Código</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Descrição -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Descrição">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">Informa sobre os intuitos e objetivos da disciplina apresentada.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Descrição da Disciplina</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Informação -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Informação">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">Exibe as informações sobre determinada área do Projeto Pedagógico do Curso.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Informação</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Nome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Nome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">Informa o nome da pessoa encarregada de determinada função no projeto pedagógico.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Nome</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Número_de_Disciplinas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Número_de_Disciplinas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Integralização"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="pt">Informa um número de disciplinas relativo às questões de integralização do curso.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Número de Disciplinas</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Número_de_Semestres -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Número_de_Semestres">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Integralização"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="pt">Informa um número de semestres relativo às questões de integralização do curso.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Número de Semestres</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Total_Carga_Horária -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Total_Carga_Horária">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Integralização"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="pt">Total de horas para serem cumpridas pelo aluno em determinado tópico.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Total Carga Horária</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Turno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Turno">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Campus_Santa_Maria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Campus_Santa_Maria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Universidade_Federal_de_Santa_Maria"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Faz_Parte_De"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Universidade_Federal_de_Santa_Maria"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="pt">O campus Santa Maria da UFSM é uma unidade acadêmica da universidade localizada no bairro Camobi, na cidade de Santa Maria, no estado do Rio Grande do Sul, Brasil. É um dos quatro campi da UFSM.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Campus Santa Maria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Ciência_da_Computação -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Ciência_da_Computação">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Campus_Santa_Maria"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Esta_Presente_Em"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Campus_Santa_Maria"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="pt">Ciência da Computação é um curso do campus Santa Maria da UFSM.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Ciência da Computação</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Ciência_da_Computação"/>
+        <rdfs:comment xml:lang="pt">Disciplinas são as matérias que compõem um curso de ensino superior. Elas são divididas em semestres e os estudantes precisam cumprir um determinado número de disciplinas para concluir o curso.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Disciplinas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Integralização -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Integralização">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Especificado_Por"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="pt">O processo de integralização do Projeto Pedagógico do Curso de Ciência da Computação da UFSM é o processo pelo qual o estudante conclui todas as disciplinas necessárias para obtenção do diploma. Isso inclui cumprir os requisitos de créditos, além de atender as exigências específicas do curso, como ACGs, trabalhos de conclusão de curso, entre outros.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Integralização</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Ciência_da_Computação"/>
+        <rdfs:comment xml:lang="pt">O Projeto Pedagógico do Curso de Ciência da Computação da UFSM é um documento que estabelece os objetivos, metas e conteúdos do curso, assim como as estratégias de ensino e avaliação. Ele também descreve as habilidades e competências que os estudantes devem desenvolver ao longo do curso, e como essas habilidades e competências serão avaliadas.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Projeto Pedagógico</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Código"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Carga_Horária"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">120</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Créditos"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="pt">Qualquer Semestre é composto de várias disciplinas que os estudantes precisam cumprir para avançar no curso e que podem ser realizadas em qualquer semestre.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Qualquer Semestre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Universidade_Federal_de_Santa_Maria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Universidade_Federal_de_Santa_Maria">
+        <rdfs:comment xml:lang="pt">A Universidade Federal de Santa Maria (UFSM) é uma instituição de ensino superior pública localizada na cidade de Santa Maria, no estado do Rio Grande do Sul, no Brasil. Fundada em 1960, a UFSM oferece uma ampla variedade de cursos de graduação e pós-graduação nas áreas de ciências humanas, ciências exatas e ciências da natureza.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Universidade Federal de Santa Maria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#1º_Semestre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#1º_Semestre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Seguido_De"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#2º_Semestre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Código"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Descrição"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Carga_Horária"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">90</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Créditos"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">6</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="pt">O primeiro semestre se encontra na primeira metade do ano letivo em uma instituição de ensino superior. Ele começa no início do ano e se estende até meados do ano. É composto por várias disciplinas do 1º Semestre que os estudantes precisam cumprir para avançar no curso.</rdfs:comment>
+        <rdfs:label xml:lang="pt">1º Semestre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#2º_Semestre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#2º_Semestre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Antecedido_Por"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#1º_Semestre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Seguido_De"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#3º_Semestre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Código"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Carga_Horária"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">60</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Créditos"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="pt">O segundo semestre se encontra na segunda metade do ano letivo em uma instituição de ensino superior. Ele começa no meio do ano e se estende até o final do ano. É composto por várias disciplinas do 2º Semestre que os estudantes precisam cumprir para avançar no curso.</rdfs:comment>
+        <rdfs:label xml:lang="pt">2º Semestre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#3º_Semestre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#3º_Semestre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Antecedido_Por"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#2º_Semestre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Seguido_De"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#4º_Semestre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Código"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Carga_Horária"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">90</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Créditos"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">6</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="pt">O terceiro semestre se encontra na primeira metade do ano letivo em uma instituição de ensino superior. Ele começa no início do ano e se estende até meados do ano. É composto por várias disciplinas do 3º Semestre que os estudantes precisam cumprir para avançar no curso.</rdfs:comment>
+        <rdfs:label xml:lang="pt">3º Semestre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#4º_Semestre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#4º_Semestre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Antecedido_Por"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#3º_Semestre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Seguido_De"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#5º_Semestre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Código"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Carga_Horária"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">90</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Créditos"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">6</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="pt">O quarto semestre se encontra na segunda metade do ano letivo em uma instituição de ensino superior. Ele começa no meio do ano e se estende até o final do ano. É composto por várias disciplinas do 4º Semestre que os estudantes precisam cumprir para avançar no curso.</rdfs:comment>
+        <rdfs:label xml:lang="pt">4º Semestre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#5º_Semestre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#5º_Semestre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Antecedido_Por"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#4º_Semestre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Seguido_De"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#6º_Semestre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Código"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Carga_Horária"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">60</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Créditos"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="pt">O quinto semestre se encontra na primeira metade do ano letivo em uma instituição de ensino superior. Ele começa no início do ano e se estende até meados do ano. É composto por várias disciplinas do 5º Semestre que os estudantes precisam cumprir para avançar no curso.</rdfs:comment>
+        <rdfs:label xml:lang="pt">5º Semestre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#6º_Semestre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#6º_Semestre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Seguido_De"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#5º_Semestre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Seguido_De"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#7º_Semestre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Código"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Carga_Horária"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">75</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Créditos"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="pt">O sexto semestre se encontra na segunda metade do ano letivo em uma instituição de ensino superior. Ele começa no meio do ano e se estende até o final do ano. É composto por várias disciplinas do 6º Semestre que os estudantes precisam cumprir para avançar no curso.</rdfs:comment>
+        <rdfs:label xml:lang="pt">6º Semestre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#7º_Semestre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#7º_Semestre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Antecedido_Por"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#6º_Semestre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Seguido_De"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#8º_Semestre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Código"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Carga_Horária"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">60</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Créditos"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="pt">O sétimo semestre se encontra na primeira metade do ano letivo em uma instituição de ensino superior. Ele começa no início do ano e se estende até meados do ano. É composto por várias disciplinas do 7º Semestre que os estudantes precisam cumprir para avançar no curso.</rdfs:comment>
+        <rdfs:label xml:lang="pt">7º Semestre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#8º_Semestre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#8º_Semestre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#É_Antecedido_Por"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#7º_Semestre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Código"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Carga_Horária"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">180</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Créditos"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">7</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="pt">O oitavo semestre se encontra na segunda metade do ano letivo em uma instituição de ensino superior. Ele começa no meio do ano e se estende até o final do ano. É composto por várias disciplinas do 8º Semestre que os estudantes precisam cumprir para avançar no curso.</rdfs:comment>
+        <rdfs:label xml:lang="pt">8º Semestre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Análise_e_Projeto_de_Sistemas_Orientados_a_Objetos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Análise_e_Projeto_de_Sistemas_Orientados_a_Objetos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1108</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obter conhecimentos avançados e práticos de análise e projeto de sistemas orientados a objetos, e aplicá-los através de uma linguagem de programação orientada a objetos, explorando os conceitos de desenvolvimento baseado em padrões de projeto, arquiteturas de software e refatoração.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Apresentação -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Apresentação">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <Informação rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visando o desenvolvimento sustentável da sociedade brasileira, a Universidade
+Federal de Santa Maria – UFSM – define, através do seu Projeto Político Pedagógico,
+os princípios básicos que devem nortear as atividades de ensino, pesquisa e
+extensão da instituição. Com o mesmo intuito, neste documento o Curso de Graduação
+em Ciência da Computação – Bacharelado também define os princípios que devem
+nortear as atividades pedagógicas realizadas no Curso.
+Para que a elaboração do projeto pedagógico esteja em sintonia com os anseios
+da sociedade, mais especificamente àqueles que refletem a necessidade de
+desenvolvimento de temáticas de cunho técnico, social e cultural, o Colegiado do
+Curso de Ciência da Computação – Bacharelado estabeleceu uma comissão especial,
+formada por discentes e docentes, para tratar exclusivamente da elaboração do
+Projeto Pedagógico do Curso de Graduação em Ciência da Computação – Bacharelado.
+Esta comissão teve como meta engajar toda a comunidade acadêmica com o intuito de
+garantir a posterior execução do Projeto Pedagógico do Curso de Ciência da
+Computação - Bacharelado.
+Esta versão do PPC/CCC ocorre dentro do âmbito do programa REUNI, instituído
+pelo Decreto 6.096 de 24 de abril de 2007. Tal programa preconiza, dentre outras
+diretrizes, a implantação de regimes curriculares que possibilitem a construção de
+itinerários formativos, sempre buscando a elevação da qualidade. Esta preocupação,
+sempre presente nos PPC anteriores deste Curso de Graduação em Ciência da
+Computação, também permeia este PPC. Também dentro do espírito do REUNI, este PPC
+busca a simplificação de mecanismos de mobilidade estudantil, tanto com os cursos
+na área de computação da própria UFSM quanto de outras universidades. Ainda, o
+programa prevê a ampliação do acesso, em nível de graduação, razão pela qual o
+Curso de Ciência da Computação – Bacharelado da UFSM está ampliando, com este PPC,
+a entrada de alunos em 33,3%, aumentando de 30 para 40 o número de vagas para
+ingressantes anuais nesta graduação. Condições para o aumento destas 10 vagas, a
+partir desse PPC, se devem à criação do curso de Bacharelado em Sistemas de
+Informação, também pelo programa REUNI.
+Enfim, por estar em estreita consonância com o atual Projeto Político
+Pedagógico da UFSM e por representar um importante marco na realização dos
+objetivos educacionais da Instituição, sobretudo no que se refere ao seu caráter
+comunitário e regional, o PPC/CCC apresentado neste documento contribui com o
+projeto de modernização da Universidade Federal de Santa Maria, bem como da
+sociedade brasileira, especificamente na formação qualificada de recursos humanos
+na área de Ciência da Computação.</Informação>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Arquiteturas_de_Computadores_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Arquiteturas_de_Computadores_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#3º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1079</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conhecer os conceitos arquiteturais atuais.
+Reconhecer e avaliar a arquitetura de computadores.
+Compreender as implicações das arquiteturas atuais nos programas de sistema (interface hardware/software).</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Atividades_Complementares_de_Graduação -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Atividades_Complementares_de_Graduação">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Integralização"/>
+        <Total_Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">290</Total_Carga_Horária>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Avaliação -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Avaliação">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <Informação rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A avaliação é um componente essencial do projeto pedagógico, servindo para
+identificar necessidades de mudanças e reorientar ações em prol do aperfeiçoamento
+do Curso como um todo. A avaliação deve, portanto estar articulada com os processos
+decisórios e deve ser concebida como uma ferramenta construtiva, que promova
+melhorias e inovações.
+A Resolução nº. 017/2000 da UFSM, que dispõe sobre o Projeto Político
+Pedagógico Institucional, prevê a avaliação de forma continuada, como instrumento
+indispensável para análise da qualidade do ensino dos cursos. Além disso, o MEC
+destaca a sua importância para a inovação e qualidade do projeto pedagógico do
+ensino de graduação, ressaltando a sua íntima conexão com a avaliação institucional.
+No Curso de Ciência da Computação da UFSM, o processo de avaliação terá os
+seguintes componentes:
+- Avaliação Externa
+- Avaliação Institucional
+- Avaliação Interna ao Curso
+- Avaliação Interna às Disciplinas
+A avaliação externa será constituída pelos mecanismos de avaliação propostos
+pelo MEC, que atualmente são: o Exame Nacional de Desempenho dos Estudantes (ENADE)
+e a Avaliação das Condições de Ensino (ACE), ambos parte do Sistema Nacional de
+Avaliação do Ensino Superior (SINAES). Estes mecanismos darão uma visão ampla das
+instalações, da organização didático pedagógica, do corpo docente e do desempenho do
+estudante, frente aos parâmetros nacionais de qualidade, possibilitando o
+planejamento de ações que reflitam na melhor qualidade do egresso.
+A avaliação institucional consiste no levantamento de um conjunto de
+indicadores de desempenho da instituição, cuja análise pode servir de subsídio para
+o dimensionamento do nível de satisfação dos integrantes e ex-integrantes da
+instituição. Este processo é operacionalizado através da Comissão Própria de
+Avaliação da UFSM, que anualmente elabora e aplica instrumentos de avaliação a
+gestores, docentes, técnico administrativos, alunos ativos e egressos. Os resultados
+obtidos são divulgados aos Centros de Ensino, para que possam ser discutidos pelas
+Coordenações de Curso e Departamentos.
+A avaliação interna do Curso será realizada anualmente em reuniões do
+Colegiado, com item de pauta específico. Nestas oportunidades, serão ouvidos
+representantes dos segmentos docente, discente e técnico-administrativo do Curso,
+buscando valorizar resultados e identificar problemas e necessidades. Com base
+nisso, o Colegiado definirá novas metas e direcionará as ações necessárias para a
+correção dos problemas apontados durante a avaliação, podendo inclusive propor a
+reformulação do projeto pedagógico, se necessário.
+A avaliação interna às disciplinas é parte do processo de ensino-aprendizagem
+e será conduzida pelos professores ministrantes, que definirão critérios e
+procedimentos de avaliação de acordo com os objetivos e a metodologia de cada
+disciplina.
+Todos os componentes do processo de avaliação deverão estar articulados. Para
+isso, cabe aos responsáveis de cada componente a comunicação de resultados e
+sugestões aos demais integrantes, nos momentos oportunos.</Informação>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Carga_Horária_Máxima_por_Semestre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Carga_Horária_Máxima_por_Semestre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Integralização"/>
+        <Total_Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">540</Total_Carga_Horária>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Carga_Horária_Mínima_por_Semestre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Carga_Horária_Mínima_por_Semestre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Integralização"/>
+        <Total_Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">270</Total_Carga_Horária>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Circuítos_Digitais -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Circuítos_Digitais">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#1º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1010</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analisar, simplificar e sintetizar sistemas à base de circuitos digitais.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Compiladores -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Compiladores">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#7º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC408</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Implementar métodos de um tradutor de linguagem.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Computadores_e_Sociedade_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Computadores_e_Sociedade_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#6º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1076</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identificar o impacto da utilização de computadores sobre a sociedade, através da identificação de problemas relevantes a sua volta e da avaliação das
+diferentes abordagens que podem ser utilizadas para tratá-los;
+Analisar os efeitos do uso da informática na sociedade e sobre o indivíduo, de modo que a tomada de decisões seja pautada numa conduta consciente e ética junto à sociedade.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Computação_Gráfica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Computação_Gráfica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#5º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1015</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Compreender as técnicas de Computação Gráfica e empregá-las em situações práticas durante o desenvolvimento de aplicações.
+Analisar e utilizar sistemas gráficos em geral, empregando técnicas gráficas interativas no desenvolvimento de programas.
+Desenvolver aplicativos que envolvam tanto periféricos quanto técnicas de Computação Gráfica.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Computação_Gráfica_Avançada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Computação_Gráfica_Avançada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1051</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Encontrar soluções e desenvolver aplicativos para problemas que requerem o uso de técnicas gráficas tridimensionais, alto grau de realismo e necessidade de execução em tempo real, como no caso de jogos de computador e aplicativos gráficos 3D interativos. Projetar algoritmos e estruturas de dados para fazer o controle de personagens virtuais autônomos presentes em jogos 3D.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Comunicação_de_Dados -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Comunicação_de_Dados">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#5º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC123</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analisar, projetar, implementar e avaliar sistemas de processamento de informação que utilizem transmissão de dados.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Coordenador -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Coordenador">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <Nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joaquim Vinicius Carvalho</Nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Criptografia_Para_Segurança_de_Dados -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Criptografia_Para_Segurança_de_Dados">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DLSC811</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introdução a métodos de criptografia e suas aplicações na segurança de dados em sistemas computacionais.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Currículo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Currículo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <Informação rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O sistema acadêmico do Curso, além daquelas observações constantes neste
+Projeto Pedagógico de Curso, segue as instruções do Guia do Estudante (editado
+semestralmente pela UFSM), onde se encontram as informações gerais e procedimentos
+para realização de matrículas; comentários sobre o sistema acadêmico; normativas
+gerais de matrícula na UFSM; informações sobre o Programa de Apoio ao Estudante –
+PRAE; e nos seus anexos, a legislação pertinente ao Sistema Acadêmico da UFSM com
+as resoluções específicas.
+DAS FORMAS DE INGRESSO
+Os alunos terão acesso ao Curso de Ciência da Computação através do Concurso
+Vestibular; do Programa de Ingresso ao Ensino Superior (PEIES); e através dos
+Processos de Transferência e Reingresso.
+DO NÚMERO DE TURMAS PARA INGRESSO
+O Curso atualmente opera com ingresso em turma única, sempre no primeiro
+semestre de cada ano.
+DO NÚMERO DE VAGAS
+O curso oferece a cada ano 40 vagas, onde 32 são para o Concurso Vestibular e
+8 vagas para o PEIES. Condições para o aumento de 10 vagas, a partir deste PPC, se
+devem à criação do Curso em Sistemas de Informação – Bacharelado, pelo REUNI.</Informação>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Cálculo_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Cálculo_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#1º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTM1019</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Compreender e aplicar as técnicas do Cálculo Diferencial e Integral para funções reais de uma variável real, dando ênfase às suas aplicações</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Cálculo_B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Cálculo_B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#3º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTM1020</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Compreender os conceitos de limite, diferenciabilidade e integração para funções de várias variáveis, bem como suas aplicações. Compreender e aplicar os conceitos de derivada e integral de funções vetoriais e aplicar os teoremas da divergência e Stokes em alguns casos particulares. Compreender soma infinita como extensão de soma finita e as noções de convergência e divergência.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Deep_Learning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Deep_Learning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPEE1085</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Compreender os princípios básicos, vantagens e limitações das principais técnicas de deep learning, sendo capaz de modelar e aplicar estas técnicas nos mais diversos contextos.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Desenvolvimento_de_Software_Educacional -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Desenvolvimento_de_Software_Educacional">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DCOM3110</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ao término da disciplina o aluno deverá ser capaz de obter uma compreensão abrangente sobre o processo de desenvolvimento de software educacional e diferenças com relação ao processo de desenvolvimento de software em geral, envolvendo diferentes abordagens e metodologias, permitindo que o estudante esteja capacitado para projetar um software educacional, incluindo desde a definição e especificação de requisitos técnicos e pedagógicos, até o desenvolvimento e avaliação do mesmo. Ainda, espera-se que o aluno alcance uma visão geral sobre as peculiaridades dos diferentes tipos de aplicações educacionais, envolvendo os processos de desenvolvimento de Recursos Educacionais Digitais, Jogos Educacionais, Ambientes Gamificados, Mundos Virtuais (Metaversos), entre outros. Por fim, espera-se que o aluno seja capaz de projetar um software educacional, utilizando uma abordagem própria para o desenvolvimento, incluindo desde a definição e especificação de requisitos técnicos e pedagógicos, até o desenvolvimento e planejamento de avaliação do mesmo.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas_Complementares_de_Graduação -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas_Complementares_de_Graduação">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Integralização"/>
+        <Total_Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">600</Total_Carga_Horária>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas_Obriagtórias -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Disciplinas_Obriagtórias">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Integralização"/>
+        <Total_Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2340</Total_Carga_Horária>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Eletricidade_e_Magnetismo_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Eletricidade_e_Magnetismo_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#4º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FSC135</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identificar  fenômenos naturais em termos de regularidade e quantificação, bem como a interpretar princípios fundamentais que generalizam as relações  entre eles e a aplicá-los na resolução de problemas simples.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Empreendedorismo_B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Empreendedorismo_B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAD1044</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elaborar o projeto de um empreendimento de modo integrado considerando suas relações com os ambientes externo e interno. Decidir entre alternativas a partir da identificação de riscos e do dimensionamento da viabilidade de negócios. Ter desenvolvido a sua capacidade empreededora, estimulando-se e obtendo ferramentas e/ou vontade profissional direcionada à criação de uma empresa na área de tecnologia.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Engenharia_de_Ontologias -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Engenharia_de_Ontologias">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DLSC815</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apresentar uma visão completa sobre ontologias e sua importância na representação de conhecimento e no desenvolvimento de aplicações semânticas. Fornecer técnicas para engenharia de ontologias. Trabalhar com metodologias e ferramentas para desenvolvimento de ontologias. Discutir conceitos principais relacionados ao desenvolvimento de aplicações semânticas, padrões de desenvolvimento, ferramentas e plataformas. Possibilitar o desenvolvimento de uma aplicação semântica completa.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Engenharia_de_Software_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Engenharia_de_Software_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#4º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1069</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Especificar, projetar e implementar sistemas baseados em computador.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Estatística -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Estatística">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#3º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STC303</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coletar, organizar, descrever, analisar e interpretar dados estatísticos mediante o conhecimento dos conceitos básicos de estatística e do reconhecimento de sua importância no fato científico de estudos e problemas.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Estratégias_Pedagógicas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Estratégias_Pedagógicas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <Informação rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O Curso de Ciência da Computação – Bacharelado da UFSM, na busca de uma
+identidade clara, considera estratégias pedagógicas que enfatizem a busca e a
+construção - produção do conhecimento, ao invés da (simples) transmissão e
+aquisição de informações. Neste sentido, o Curso, além de metodologias
+demonstrativas (ex: aulas expositivas) busca diversificações didático pedagógicas
+que privilegiem a pesquisa e a extensão como instrumentos de aprendizagem,
+estimulando a atitude científica e profissional. Para tanto, o Curso promove a
+inserção dos alunos e professores em grupos de ensino, pesquisa e extensão que
+tragam benefícios para a qualidade e aperfeiçoamento do ensino, para a gestão
+universitária e para a sociedade.
+O estabelecimento de parcerias com a comunidade, através de convênios e
+intercâmbios institucionais recebem atenção especial, não só pelo ensino do
+componente prático do Curso, mas também pela experiência de vida em sociedade e
+pela interlocução entre a Universidade e a Sociedade.
+A organização da grade curricular, a ser vencida semestralmente pelo aluno,
+segue as Diretrizes Curriculares da Área de Computação e Informática do MEC (anexa)
+deve estar de acordo com os objetivos do Curso. Neste sentido a grade contém um
+núcleo de disciplinas básicas (formação básica) que fundamenta os dois núcleos
+(eixos) de formação tecnológica (Sistemas de Computação e Sistemas de Informação).
+Permeando os núcleos básico e tecnológico, encontra-se a formação complementar e
+humanística. Na grade, a seqüência aconselhada de disciplinas é realizada de
+maneira a incentivar o inter-relacionamento entre os núcleos (disciplinas de
+núcleos distintos são cursadas simultaneamente) e refletir harmonia e equilíbrio
+nas diferentes disciplinas e atividades que a compõem (a diversidade incentiva o
+raciocínio crítico e criativo). Além disto, a grade curricular é flexível, o que
+oportuniza aos alunos construí-la através de componentes curriculares que atendam
+expectativas individuais dos estudantes e permitam atualização constante.
+Para atender adequadamente a formação humanística, que permeia os núcleos
+básico e tecnológico, mas que é importante na formação de um profissional
+consciente e ético, disciplina de Computador e Sociedade, deverá trabalhar
+importantes questões relacionadas à tomada de decisão em setores de grande impacto
+na sociedade, tais como em questões de privacidade de informação e propriedade
+intelectual. Como a formação humanística depende de conhecimentos históricos da
+própria evolução da computação, a disciplina de Introdução a Computação resgata o
+referencial histórico da área e o relaciona aos temas técnicos do Curso, tais como
+os projetos de hardware e software. Finalmente, o Ciclo de Palestras da Informática
+(CPI), projeto de extensão registrado no Gabinete de Projetos do Centro de
+Tecnologia, com apoio do Programa de Educação Tutorial (PET), deverá promover
+regularmente palestras e discussões no âmbito da formação técnica e humanística.
+Com o objetivo de aumentar a motivação dos alunos, a fração complementar da
+carga horária de cada semestre é crescente ao longo do curso. Para implementar esta
+idéia o curso se apóia em dois pilares: Atividades Complementares de Graduação
+(ACGs) e Disciplinas Complementares de Graduação (DCGs). Desde o primeiro semestre
+o aluno é incentivado a participar de atividades complementares na forma de ACGs
+(palestras, estágios, cursos, entre outras atividades).
+Na prática, a participação em atividades complementares deverá permear os 8
+semestres do Curso, sendo crescente conforme o aluno se torna maduro e motivado a
+explorá-las. De maneira similar, durante os primeiros semestres o aluno é
+incentivado a definir, juntamente com um professor tutor, o seu perfil profissional
+através de um plano de estudos complementares com disciplinas a serem agregadas
+ao seu currículo. Com esta metodologia o aluno se torna gradativamente
+responsável pelas suas escolhas, o que além de o motivar, desperta o senso de
+responsabilidade desejado no perfil profissional do curso.
+Ao final do Curso o aluno deverá cursar a disciplina de Trabalho de Graduação,
+num total de 180 horas, de acordo com as Normas para Realização do Trabalho de
+Graduação (ver legislação que regula o currículo do curso) definidas pelo Colegiado
+do Curso de Ciência da Computação. Esta disciplina pode ser considerada uma das
+partes mais importantes do Curso, pois trata-se de uma oportunidade que o aluno tem
+de demonstrar independência e originalidade. Nela o aluno deverá ser capaz de
+planejar e organizar um projeto de razoável porte, bem como desenvolvê-lo
+utilizando os métodos e técnicas aprendidas durante o Curso. Do ponto de vista do
+aluno, qualquer que seja seu nível de desempenho acadêmico, através do TG ele tem a
+chance de demonstrar todo o seu potencial realizador e criativo, tanto quanto a sua
+capacidade de &quot;vender seu peixe&quot;, seja sob forma escrita através de documento que
+poderá inclusive servir a outros, seja sob forma de apresentação oral. O resultado
+final deverá trazer um ótimo sentimento de &quot;ter realizado algo, com começo, meio e
+fim&quot;.
+Tecnicamente, um bom projeto de TG envolve uma combinação de uma boa pesquisa
+sobre o &quot;estado-da-arte&quot;, uma implementação não-trivial ou um trabalho teórico bemfundamentado, e um relatório bem organizado e bem escrito que exponha os detalhes
+relevantes do projeto e deixe bem claro seu contexto, seus objetivos, os resultados
+obtidos, e as perspectivas futuras. Os projetos excepcionais invariavelmente
+avançam fronteiras como, por exemplo, desenvolvimento de uma aplicação complexa que
+ainda não existe, ou melhora significativa de uma aplicação ou método já existente,
+seja através de sua funcionalidade ou desempenho, dentre outras.
+A ênfase à interdisciplinaridade e ao trabalho multiprofissional implica na
+adoção de estratégias que levem ao desenvolvimento de trabalho em grupo, integrando
+diferentes áreas do conhecimento que possuam afinidades e interesses comuns na
+busca da melhoria do ensino. Esta interdisciplinaridade pressupõe um ambiente que
+cria uma integração de conhecimento. Neste sentido, são criadas oportunidades de
+atualização ou aprofundamento de conhecimento através de ações como o
+desenvolvimento de programas que permitam a oferta de cursos extracurriculares, o
+incentivo de ações interdisciplinares, as condições de acesso às informações, o
+intercâmbio de idéias e a divulgação da produção.
+Pela concepção do Curso de Ciência da Computação, os professores são
+orientados a adotar múltiplos procedimentos de avaliação do processo de ensinoaprendizagem. Os principais procedimentos indicados para avaliação em disciplinas
+são:
+- verificação da funcionalidade de programas para solucionar problemas
+propostos;
+- entrevista no ato de demonstrações dos programas desenvolvidos;
+- relatórios de experimentos ou de estudos;
+- apresentações orais dos trabalhos realizados;
+- seminários que promovam o debate;
+- provas escritas envolvendo teoria e prática.
+Em termos de auto-avaliação das estratégias pedagógicas, o Curso utiliza os
+instrumentos externos, institucionais e internos, conforme especificado no capítulo
+sobre Avaliação. O resultado destas avaliações, juntamente com o resultado da
+avaliação discente realizada pelos professores em sala de aula e discussões no
+Colegiado do Curso, permite que o processo de ensino-aprendizagem seja
+constantemente aperfeiçoado. Com isto o Curso consolida os aspectos que apresentam
+bons resultados e re-estuda os que apresentam resultados menos satisfatórios.
+O compromisso do Curso de Ciência da Computação vai além da educação formal
+preocupando-se também com a capacitação dos alunos para o estudo continuado e a
+atualização de egressos. Cursos eventuais são promovidos neste sentido. Além disto,
+o curso também estimula a qualificação e o aperfeiçoamento dos docentes, troca de
+experiências (diálogo pedagógico entre docentes) e renovação metodológica,
+permitindo que o docente compreenda a sociedade onde se insere.
+As questões administrativas são orientadas para que o interesse acadêmico
+seja sempre o elemento norteador do ensino, da pesquisa e da extensão. Assim, a
+gestão torna-se participativa, ressaltando-se o papel do Colegiado do Curso de
+Ciência da Computação na definição de políticas, diretrizes e ações.
+As estratégias destacadas acima convergem para a implementação do Projeto
+Pedagógico do Curso de Ciência da Computação – Bacharelado que exige esforço
+coletivo e comprometimento, visando a formação de profissionais críticos,
+reflexivos, autônomos e éticos, que enfrentem os desafios próprios da área com
+competência e responsabilidade.</Informação>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Estruturas_de_Dados_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Estruturas_de_Dados_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#2º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1066</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Projetar a representação de dados na memória de um computador e descrever os algoritmos que implementem operações em termos das representações
+projetadas.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Fundamentos_de_Banco_de_Dados -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Fundamentos_de_Banco_de_Dados">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#4º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC119</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Construir e manter sistemas integrados de informação, utilizando sistemas de gerência de banco de dados.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Geometria_Analítica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Geometria_Analítica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#1º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTM1025</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operar com vetores, distâncias, cônicas e quádricas, volumes, equações de retas, planos, áreas.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Gerência_de_Redes_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Gerência_de_Redes_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DCOM1000</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ter uma visão abrangente sobre gerência de redes e as áreas nas quais pode ser decomposta: falhas, configuração, contabilização, desempenho e segurança. Compreender os principais modelos e metodologias de gerenciamento de redes, bem como ferramentas disponíveis.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Implementação_de_Banco_de_Dados -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Implementação_de_Banco_de_Dados">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC131</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identificar as principais técnicas de implantação de Sistemas Gerenciadores de Banco de Dados utilizados na indústria. Distingüir as principais características e funcionalidades que um Sistema de Banco de Dados deve possuir. Adequar as características e funcionalidades dos Sistemas de Banco de Dados a projetos práticos.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Implementação_de_Linguagens_de_Programação -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Implementação_de_Linguagens_de_Programação">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1088</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conhecer as técnicas e mecanismos utilizados para implementar os conceitos das linguagens de programação.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Inteligência_Artificial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Inteligência_Artificial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#7º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1014</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aplicar os conceitos e técnicas de inteligência artificial, dando ênfase ao projeto e à construção de sistemas de resolução de problemas.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Internet_das_Coisas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Internet_das_Coisas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DLSC808</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conhecer os conceitos relacionados à Internet das Coisas (IoT), apresentando o seu histórico de evolução, discutindo potenciais, aplicações e tendências. Conhecer os componentes da IoT, identificando suas funções e características. Estudar as diferentes tecnologias e arquiteturas de sistemas relacionados à IoT, estudando seus problemas e conhecendo suas dificuldades.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Introdução_à_Computação_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Introdução_à_Computação_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#1º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1085</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Entender a história da computação e sua relação com as principais formas de utilização e aplicação de computadores;
+Descrever a organização funcional de um computador;
+Ter uma visão geral do escopo compreendido pela Ciência da Computação.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Justificativa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Justificativa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <Informação rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promulgação da Lei de Diretrizes e Bases da Educação - LDB (Lei nº 9.394 de
+20/12/1996) foi um marco na sociedade brasileira. A LDB deu início a um processo de
+transformação no cenário da educação superior, inclusive com mudanças na composição
+e no papel do Conselho Nacional de Educação. A flexibilização curricular, permitida
+e incentivada pela LDB, liberou as instituições de ensino superior e os cursos para
+exercerem sua autonomia e criatividade na elaboração de propostas específicas,
+capazes de articular as demandas locais e regionais de formação profissional com os
+recursos humanos, físicos e materiais disponíveis. Além disto, também possibilitou
+que as instituições de ensino superior fixem currículos para seus cursos e
+programas, desde que observadas as diretrizes gerais pertinentes.
+Na área de computação, especialmente no âmbito da Sociedade Brasileira de
+Computação (SBC) e da Comissão de Especialistas de Educação da área de Computação e
+Informática (CEEInf) da Secretaria do Ensino Superior do Ministério da Educação, a
+LDB disparou um processo de muitas discussões e proposições com vistas ao
+estabelecimento das diretrizes curriculares nacionais para os cursos de graduação
+na área de Computação. Tais diretrizes servem de pilar para que cada Universidade
+possa traçar seu próprio currículo dentro de políticas pedagógicas amplamente
+discutidas e aceitas.
+Das discussões tem-se que os cursos da área de computação e informática
+deveriam ter como objetivo principal a formação de recursos humanos para o
+desenvolvimento científico e tecnológico da computação (hardware e software), tanto
+para atuação na área de educação em computação como para o desenvolvimento de
+ferramentas de informática que atendam a determinadas necessidades humanas.
+Naturalmente, para atingir tal objetivo, há que se considerar a importância de
+currículos que possam, efetivamente, preparar pessoas críticas, ativas e cada vez
+mais conscientes dos seus papéis sociais e da sua contribuição no avanço científico
+e tecnológico do país.
+Tem-se também que o conteúdo social, humanístico e ético dessa formação
+deveria orientar os currículos no sentido de garantir a expansão das capacidades
+humanas em íntima relação com as aprendizagens técnico-científicas no campo da
+Computação e Informática. Trata-se pois, de uma formação superior na qual os
+indivíduos também estarão sendo capacitados a lidar com as dimensões humanas e
+éticas dos conhecimentos e das relações sociais. Tal formação é inseparável quando
+uma das finalidades fundamentais da Universidade e do ensino superior é preparar as
+futuras gerações de modo crítico e propositivo, visando a melhoria da vida social,
+cultural e planetária.
+Na UFSM, o Curso de Ciência da Computação, assim denominado por acatar a
+recomendação da CEEInf do MEC, foi criado em 1991 sob a denominação de Bacharelado
+em Informática. Naquela época a única referência existente era o Currículo de
+Referência da Sociedade Brasileira de Computação (SBC), no qual o curso foi baseado
+por ocasião de sua criação. Em 2001, baseando-se na publicação, pela CEEInf em
+1999, das Diretrizes Curriculares para Cursos da Área de Computação e Informática,
+o Curso de Ciência da Computação da UFSM realizou uma ampla reforma curricular, o
+que permitiu revitalizar o seu currículo de acordo com políticas pedagógicas
+atualizadas.
+Com o currículo de 2001, o Curso de Ciência da Computação foi direcionado
+para desenvolver a capacidade de projetar e construir software e hardware
+obedecendo preceitos de formação básica, profissional e complementar. Em
+computação:
+- a formação básica envolve algoritmos, matemática, lógica, teoria da
+computação e física;
+- a formação profissional compreende um conjunto coerente de disciplinas
+profissionalizantes que define um perfil profissional voltado ao projeto e
+construção de software básico e aplicativo; e
+- a formação complementar compreende duas partes flexíveis. A primeira delas
+permite a inserção de disciplinas complementares no currículo, escolhidas segundo a
+sua importância no contexto social atual e a vocação da UFSM. A segunda, menor mas
+não menos importante, permite aos alunos escolher uma formação complementar em
+Computação ou em outras áreas, visando uma melhor interação com especialistas
+destas áreas ao desenvolver projetos interdisciplinares.
+Naturalmente, é evidente que a Educação Superior deve se revitalizar a cada
+dia, inclusive no amadurecimento das suas estratégias de ensino, o que reflete
+diretamente na formação profissional, especialmente na formação de um profissional
+da área de computação, o qual esta imerso num mundo tecnológico extremamente
+dinâmico.
+Cabe ressaltar que esta versão do Projeto Pedagógico também foi motivada por
+reforma curricular no curso de Ciência da Computação, atendendo ao Programa REUNI.
+Mais especificamente, tal reforma tornou-se necessária para atualização de
+conteúdos programáticos e sincronização do currículo, principalmente nos semestres
+iniciais, ao currículo do curso de Sistemas de Informação, também sendo criado no
+âmbito do Programa REUNI. Sem tais ajustes, a manutenção das disciplinas de ambos
+os cursos pelo mesmo departamento didático sobrecarregaria o corpo docente em
+detrimento da qualidade de ensino.
+Esta reforma compreende, resumidamente:
+- aumento do número de vagas discentes, das atuais 30 vagas para 40 vagas
+anuais;
+- alteração na carga horária para integralização curricular, distribuindo-se
+as 3.200 horas de carga total em 2.310 horas em disciplinas obrigatórias, 600 horas
+em disciplinas complementares de graduação (DCG) e 290 horas em atividades
+complementares de graduação (ACG);
+- reformulação de disciplinas do núcleo de formação básica, com atualizações
+de conteúdos programáticos, cargas horárias de disciplinas, inclusão de disciplinas
+práticas nos semestres iniciais (Laboratório de Programação I e II) e mudança de
+seqüência aconselhada nas disciplinas de matemática e física;
+- atualização do conteúdo programático de disciplinas do núcleo de formação
+tecnológica, com alterações de carga horária;
+- inclusão da disciplina de Metodologia de Pesquisa em Ciência da Computação
+no núcleo de formação complementar e humanística.
+Deste modo, observando que a legislação brasileira (LDB e Diretrizes
+Curriculares) prioriza não só os conteúdos universais, mas também o desenvolvimento
+de competências e habilidades na busca do aperfeiçoamento da formação cultural,
+técnica e científica do cidadão, o Projeto Pedagógico do Curso de Graduação em
+Ciência da Computação, descrito neste documento, busca preponderantemente a
+garantia da flexibilidade curricular, da formação integral do cidadão, da
+interdisciplinaridade, da articulação entre teoria e prática, e da
+indissociabilidade do ensino, da pesquisa e da extensão.</Informação>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Laboratório_de_Programação_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Laboratório_de_Programação_I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#1º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1065</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formular soluções para os problemas propostos, visando à obtenção dos resultados por computador; Escrever programas, utilizando uma linguagem de programação.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Laboratório_de_Programação_II -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Laboratório_de_Programação_II">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#2º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1067</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Projetar e implementar aplicações usando os conceitos de Estruturas de Dados.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Libras_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Libras_I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EDE1114</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adquirir o conhecimento da história surda, do estudo lingüístico da LIBRAS, das representações do ser surdo (língua, identidade e comunidade surda) e das organizações e práticas sociais (educação, cultura e identidade lingüística), e o aprendizado básico da LIBRAS.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Linguagens_Formais_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Linguagens_Formais_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#5º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1083</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Desenvolver sistemática e formalmente conceitos relacionados às linguagens, gramáticas, reconhecedores e geradores.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Língua_Inglesa_Instrumental_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Língua_Inglesa_Instrumental_I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#2º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LTE1059</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ler instrumentalmente textos em língua estrangeira, utilizando competências textuais, estratégicas e sistêmicas.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Língua_Inglesa_Instrumental_II -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Língua_Inglesa_Instrumental_II">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#3º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LTE1060</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIÊNCIA DA COMPUTAÇÃO: Ler extensivamente textos em língua estrangeira, utilizando competências sistêmicas, textuais, estratégicas e discursivas.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Lógica_de_Predicado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Lógica_de_Predicado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#6º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1013</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Empregar a lógica de predicado como linguagem de especificação e de programação.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Lógica_e_Algorítmo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Lógica_e_Algorítmo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#1º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1064</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formular soluções para os problemas propostos dentro da lógica de programação; Escrever programas, utilizando uma linguagem de descrição; Programar pequenos problemas usando uma Linguagem de Programação.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Maratona_de_Programação -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Maratona_de_Programação">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DCOM1001</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ao final da disciplina o aluno terá condições de avaliar problemas computacionais complexos que abordam diversas áreas da computação, e propor e implementar soluções computacionais eficientes, fazendo uso da linguagem de programação mais adequada para cada tipo de problema.
+Treinar os alunos, por meio da resolução de vários problemas, para participar da Maratona de Programação organizada anualmente pela SBC (Sociedade Brasileira de Computação) e ICPC (International Collegiate Programming Contest).</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Matemática_Discreta_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Matemática_Discreta_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#2º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTM1040</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Compreender conceitos e resolver problemas associados a lógica, técnicas de demonstração e validação de propriedades através de indução matemática, teoria de conjuntos, aritmética dos números naturais, princípios de contagem, além de ser capaz de aplicar tais conteúdos em problemas concretos.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Metodologia_de_Pesquisa_em_Informática -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Metodologia_de_Pesquisa_em_Informática">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#7º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1086</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identificar as etapas do método científco e sua adaptação à Computação.
+Definir um projeto de pesquisa na área de sistemas de informação com características de inovação de aplicações, metodologia, produto ou serviço.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Mineração_de_Dados -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Mineração_de_Dados">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1098</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apresentar conceitos, técnicas e ferramentas relevantes na área de descoberta de conhecimento em base de dados e mineração de dados, explorando os aspectos associados a esta área.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Modelagem_e_Simulacao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Modelagem_e_Simulacao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC132</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduzir as principais técnicas de construção de modelos e simulação  em computadores.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Métodos_Numéricos_Computacionais -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Métodos_Numéricos_Computacionais">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#4º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTM224</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analisar, interpretar e aplicar os métodos numéricos na solução, via computador, de equações e sistemas de equações lineares e não-lineares.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Normas_TCC_e_Estágio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Normas_TCC_e_Estágio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <Informação rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O Colegiado do Curso de Ciência da Computação da Universidade Federal de
+Santa Maria, no uso de suas atribuições legais e considerando:
+- o disposto no Projeto Pedagógico - ano de 2008, que delega ao Colegiado a
+atribuição de emitir normas para a disciplina de Trabalho de Graduação;
+- RESOLVE emitir estas normas para seus Trabalhos de Graduação, doravante
+chamados TGs.
+DA OFERTA DA DISCIPLINA
+Art 1º - A disciplina Trabalho de Graduação em Ciência da Computação será
+ofertada todos os semestres, para atender a demanda.
+DA MATRÍCULA
+Art 2º - Poderá se matricular na disciplina de Trabalho de Graduação em
+Ciência da Computação o aluno que tiver sido aprovado (ou dispensado) em 75% da
+carga horária do curso (2.400 horas).
+Art 3º - O aluno, junto ao orientador, deverá elaborar um Projeto de Trabalho
+de Graduação, detalhando o trabalho a ser executado na disciplina.
+Parágrafo Único - A Coordenação do Curso definirá o formato e os itens a
+constar no projeto a ser elaborado.
+Art 4º - No ato da matrícula na disciplina, o aluno deverá apresentar o
+Projeto de Trabalho de Graduação.
+Parágrafo Primeiro - O tema do trabalho obrigatoriamente estará relacionado à
+área de Computação e Informática.
+Parágrafo Segundo - O projeto apresentado deverá conter a assinatura do
+professor orientador e o parecer favorável de outro professor, chamado professor
+avaliador, atuante em área similar ao objeto do trabalho proposto, conforme
+formulário de avaliação de projetos do Gabinete de Apoio à Pesquisa e Extensão do
+Centro de Tecnologia.
+DO ORIENTADOR
+Art 5º - O orientador do Trabalho de Graduação deverá ser um professor do
+Departamento de Eletrônica e Computação da UFSM (DELC), atuante na área de
+Computação e Informática.
+Art 6º - O professor orientador somente deverá indicar para defesa do
+trabalho o aluno que tiver concluído o trabalho satisfatoriamente.
+DO DESENVOLVIMENTO DO TRABALHO
+Art 7º - O desenvolvimento da disciplina transcorre sob a supervisão do
+professor orientador, tendo o aluno a responsabilidade da consecução do trabalho
+proposto.
+DA AVALIAÇÃO
+Art 8º - A avaliação do Trabalho de Graduação será composta por uma Seção
+Pública de Andamento e uma Seção Pública de Defesa.
+Art 9º - Na metade do semestre, será realizado uma Sessão Pública de
+Andamento onde o aluno obrigatoriamente apresentará para uma banca avaliadora o
+trabalho desenvolvido até o momento.
+Parágrafo Único - O objetivo desta sessão pública é propiciar um momento de
+avaliação preliminar do trabalho e determinar eventuais correções no rumo a ser
+seguido.
+Art 10º - Na data especificada pelo Colegiado, o aluno deverá entregar à
+Coordenação do Curso um Resumo do trabalho desenvolvido até o momento.
+Parágrafo Primeiro - O Resumo deverá conter (pelo menos) a revisão
+bibliográfica do Trabalho de Graduação, a descrição do trabalho já desenvolvido e a
+descrição do trabalho que falta desenvolver.
+Parágrafo Segundo - Caso o aluno não entregue o Resumo na data especificada
+ele será considerado REPROVADO.
+Art 11º - Para cada trabalho será estabelecida pelo Colegiado do Curso uma
+banca avaliadora de Sessão Pública de Andamento, constituída por 2 profissionais de
+nível superior atuantes em área similar ao objeto do trabalho proposto, com
+sugestão de nomes feita pelo aluno e seu orientador.
+Parágrafo Primeiro - O orientador e o co-orientador do aluno não poderão
+participar da banca avaliadora.
+Parágrafo Segundo - A banca avaliará o trabalho apresentado na sessão pública
+com base no projeto apresentado na ocasião da matrícula, fazendo comentários e
+sugestões ao aluno.
+Parágrafo Terceiro - Não será emitida nota na sessão pública.
+Parágrafo Quarto - A Coordenação do Curso definirá a duração da sessão
+pública.
+Art 12º - A cada semestre, o Colegiado do Curso definirá os prazos e as datas
+para:
+- a entrega do Resumo;
+- as Sessões Públicas de Andamento;
+- a entrega dos Relatórios Escritos;
+- as Sessões Públicas de Defesa;
+- os pedidos de recurso ao Colegiado.
+Parágrafo Único - É de responsabilidade da Coordenação do Curso a organização
+das Sessões Públicas de Andamento e de Defesa.
+Art 13º - A Banca Examinadora da Seção Pública de Defesa de um Trabalho de
+Graduação será composta por três integrantes.
+Parágrafo Primeiro - Fará parte da Banca Examinadora o orientador ou o coorientador, mas não ambos.
+Parágrafo Segundo - A Banca Examinadora será composta por pelo menos dois
+professores do DELC atuantes na área de Computação e Informática.
+Art 14º - O Colegiado do Curso definirá a Banca Examinadora de cada Trabalho
+de Graduação, podendo o aluno ou seu orientador sugerir nomes.
+Art 15º - Na data estipulada pelo Colegiado do Curso, o aluno deverá entregar
+três (3) cópias do Relatório Escrito que relata o trabalho desenvolvido, juntamente
+com um Parecer do orientador.
+Parágrafo Primeiro - O parecer do orientador deverá indicar que o aluno está
+apto para a defesa do trabalho ou que o aluno está REPROVADO.
+Parágrafo Segundo - Caso o aluno não entregue o Relatório Escrito e o Parecer
+na data especificada ele será considerado REPROVADO.
+Art 16º - A Coordenação entregará aos integrantes da Banca Examinadora a
+cópia do Relatório Escrito, uma cópia do Projeto entregue na matrícula, e os
+critérios indicados de avaliação.
+Art 17º - A Sessão Pública de Defesa terá as seguintes fases:
+- apresentação do trabalho pelo aluno;
+- análise, questionamentos e comentário dos integrantes da Banca Examinadora;
+- comentários e questionamentos dos demais participantes da sessão; e
+- reunião da banca para deliberação do conceito.
+Parágrafo Único - O Colegiado estabelecerá o tempo de duração da apresentação
+e dos pronunciamentos da banca e dos demais participantes.
+Art 18º - Após a defesa do Trabalho de Graduação, cada integrante da Banca
+Examinadora emitirá seu conceito.
+Parágrafo Primeiro – O conceito deverá ser APROVADO ou REPROVADO.
+Parágrafo Segundo - O aluno será considerado reprovado na disciplina se
+obtiver dois conceitos REPROVADO.
+Parágrafo Terceiro – Caso o aluno receba três conceitos APROVADO, cada membro
+da banca deverá responder à pergunta: “Vossa Senhoria considera que este trabalho
+está entre os 10% melhores que já avaliou?”. Havendo unanimidade de respostas SIM,
+será concedido o conceito APROVADO COM LOUVOR.
+Art 19º - A banca poderá requerer alterações a serem efetivadas no Relatório
+Escrito.
+Parágrafo Único - A divulgação do conceito deverá ser condicionada à
+realização destas alterações.
+Art 20º - A banca estabelecerá um prazo para a entrega da versão definitiva
+do Relatório Escrito.
+Parágrafo Primeiro - Esse prazo não poderá ser superior a sessenta dias.
+Parágrafo Segundo - Caso o prazo exceda o final do semestre letivo, o aluno
+ficará em situação de Trabalho Incompleto na disciplina durante esse prazo.
+Art 21º - O aluno deverá entregar na Coordenação do Curso uma versão
+definitiva do Relatório Escrito, em meio digital, em formato definido pela
+Coordenação do Curso, no prazo definido pela banca, conforme Art 20º.
+Parágrafo primeiro - No caso de a banca ter requerido alterações, a versão
+definitiva deverá ser acompanhada de parecer do professor orientador atestando a
+realização satisfatória das alterações.
+Parágrafo segundo - Caso a versão definitiva do Relatório Escrito não seja
+entregue no prazo definido pela banca, o aluno será considerado REPROVADO na
+disciplina.
+DOS CRITÉRIOS DE AVALIAÇÃO
+Art 22º - O Colegiado determinará os critérios de avaliação que deverão ser
+cumpridos pelos integrantes da Banca Examinadora para emissão de seu conceito.
+DOS CASOS OMISSOS
+Art 23º - O Colegiado do Curso resolverá os casos omissos nestas normas.
+Estas normas entram em vigor a partir de 2010, juntamente com o Projeto
+Pedagógico do Curso de Ciência da Computação.
+Colegiado do Curso de Ciência da Computação</Informação>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Objetivos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Objetivos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <Informação rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promulgação da Lei de Diretrizes e Bases da Educação - LDB (Lei nº 9.394 de
+20/12/1996) foi um marco na sociedade brasileira. A LDB deu início a um processo de
+transformação no cenário da educação superior, inclusive com mudanças na composição
+e no papel do Conselho Nacional de Educação. A flexibilização curricular, permitida
+e incentivada pela LDB, liberou as instituições de ensino superior e os cursos para
+exercerem sua autonomia e criatividade na elaboração de propostas específicas,
+capazes de articular as demandas locais e regionais de formação profissional com os
+recursos humanos, físicos e materiais disponíveis. Além disto, também possibilitou
+que as instituições de ensino superior fixem currículos para seus cursos e
+programas, desde que observadas as diretrizes gerais pertinentes.
+Na área de computação, especialmente no âmbito da Sociedade Brasileira de
+Computação (SBC) e da Comissão de Especialistas de Educação da área de Computação e
+Informática (CEEInf) da Secretaria do Ensino Superior do Ministério da Educação, a
+LDB disparou um processo de muitas discussões e proposições com vistas ao
+estabelecimento das diretrizes curriculares nacionais para os cursos de graduação
+na área de Computação. Tais diretrizes servem de pilar para que cada Universidade
+possa traçar seu próprio currículo dentro de políticas pedagógicas amplamente
+discutidas e aceitas.
+Das discussões tem-se que os cursos da área de computação e informática
+deveriam ter como objetivo principal a formação de recursos humanos para o
+desenvolvimento científico e tecnológico da computação (hardware e software), tanto
+para atuação na área de educação em computação como para o desenvolvimento de
+ferramentas de informática que atendam a determinadas necessidades humanas.
+Naturalmente, para atingir tal objetivo, há que se considerar a importância de
+currículos que possam, efetivamente, preparar pessoas críticas, ativas e cada vez
+mais conscientes dos seus papéis sociais e da sua contribuição no avanço científico
+e tecnológico do país.
+Tem-se também que o conteúdo social, humanístico e ético dessa formação
+deveria orientar os currículos no sentido de garantir a expansão das capacidades
+humanas em íntima relação com as aprendizagens técnico-científicas no campo da
+Computação e Informática. Trata-se pois, de uma formação superior na qual os
+indivíduos também estarão sendo capacitados a lidar com as dimensões humanas e
+éticas dos conhecimentos e das relações sociais. Tal formação é inseparável quando
+uma das finalidades fundamentais da Universidade e do ensino superior é preparar as
+futuras gerações de modo crítico e propositivo, visando a melhoria da vida social,
+cultural e planetária.
+Na UFSM, o Curso de Ciência da Computação, assim denominado por acatar a
+recomendação da CEEInf do MEC, foi criado em 1991 sob a denominação de Bacharelado
+em Informática. Naquela época a única referência existente era o Currículo de
+Referência da Sociedade Brasileira de Computação (SBC), no qual o curso foi baseado
+por ocasião de sua criação. Em 2001, baseando-se na publicação, pela CEEInf em
+1999, das Diretrizes Curriculares para Cursos da Área de Computação e Informática,
+o Curso de Ciência da Computação da UFSM realizou uma ampla reforma curricular, o
+que permitiu revitalizar o seu currículo de acordo com políticas pedagógicas
+atualizadas.
+Com o currículo de 2001, o Curso de Ciência da Computação foi direcionado
+para desenvolver a capacidade de projetar e construir software e hardware
+obedecendo preceitos de formação básica, profissional e complementar. Em
+computação:
+- a formação básica envolve algoritmos, matemática, lógica, teoria da
+computação e física;
+- a formação profissional compreende um conjunto coerente de disciplinas
+profissionalizantes que define um perfil profissional voltado ao projeto e
+construção de software básico e aplicativo; e
+- a formação complementar compreende duas partes flexíveis. A primeira delas
+permite a inserção de disciplinas complementares no currículo, escolhidas segundo a
+sua importância no contexto social atual e a vocação da UFSM. A segunda, menor mas
+não menos importante, permite aos alunos escolher uma formação complementar em
+Computação ou em outras áreas, visando uma melhor interação com especialistas
+destas áreas ao desenvolver projetos interdisciplinares.
+Naturalmente, é evidente que a Educação Superior deve se revitalizar a cada
+dia, inclusive no amadurecimento das suas estratégias de ensino, o que reflete
+diretamente na formação profissional, especialmente na formação de um profissional
+da área de computação, o qual esta imerso num mundo tecnológico extremamente
+dinâmico.
+Cabe ressaltar que esta versão do Projeto Pedagógico também foi motivada por
+reforma curricular no curso de Ciência da Computação, atendendo ao Programa REUNI.
+Mais especificamente, tal reforma tornou-se necessária para atualização de
+conteúdos programáticos e sincronização do currículo, principalmente nos semestres
+iniciais, ao currículo do curso de Sistemas de Informação, também sendo criado no
+âmbito do Programa REUNI. Sem tais ajustes, a manutenção das disciplinas de ambos
+os cursos pelo mesmo departamento didático sobrecarregaria o corpo docente em
+detrimento da qualidade de ensino.
+Esta reforma compreende, resumidamente:
+- aumento do número de vagas discentes, das atuais 30 vagas para 40 vagas
+anuais;
+- alteração na carga horária para integralização curricular, distribuindo-se
+as 3.200 horas de carga total em 2.310 horas em disciplinas obrigatórias, 600 horas
+em disciplinas complementares de graduação (DCG) e 290 horas em atividades
+complementares de graduação (ACG);
+- reformulação de disciplinas do núcleo de formação básica, com atualizações
+de conteúdos programáticos, cargas horárias de disciplinas, inclusão de disciplinas
+práticas nos semestres iniciais (Laboratório de Programação I e II) e mudança de
+seqüência aconselhada nas disciplinas de matemática e física;
+- atualização do conteúdo programático de disciplinas do núcleo de formação
+tecnológica, com alterações de carga horária;
+- inclusão da disciplina de Metodologia de Pesquisa em Ciência da Computação
+no núcleo de formação complementar e humanística.
+Deste modo, observando que a legislação brasileira (LDB e Diretrizes
+Curriculares) prioriza não só os conteúdos universais, mas também o desenvolvimento
+de competências e habilidades na busca do aperfeiçoamento da formação cultural,
+técnica e científica do cidadão, o Projeto Pedagógico do Curso de Graduação em
+Ciência da Computação, descrito neste documento, busca preponderantemente a
+garantia da flexibilidade curricular, da formação integral do cidadão, da
+interdisciplinaridade, da articulação entre teoria e prática, e da
+indissociabilidade do ensino, da pesquisa e da extensão.</Informação>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Organização_de_Computadores -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Organização_de_Computadores">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#2º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1011</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Descrever os elementos constituintes de uma unidade de processamento (UCP), analisar o fluxo elementar de seus dados e programá-la.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Papel_dos_Docentes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Papel_dos_Docentes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <Informação rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A consolidação do Projeto Político Pedagógico do Curso de Ciência da
+Computação exige o esforço de todos os envolvidos no processo. Neste contexto, o
+corpo docente deve estar consciente do seu papel, enquanto sujeito envolvido e
+responsável pela efetivação do Projeto Político Pedagógico, e deve assumir
+comportamentos e atitudes no desempenho de suas funções, visando atingir os
+objetivos do Curso de Ciência da Computação.
+Neste sentido, partindo-se do pressuposto da indissociabilidade entre o
+ensino, pesquisa e extensão, com relação ao metodologia e atitudes do corpo
+docente, cada docente é importante para promover a:
+- interação entre os objetivos da UFSM e do Curso através de ações
+devidamente articuladas e cooperativas, visando a efetivação do Projeto Pedagógico
+do Curso;
+- capacitação e atualização científica e didático pedagógica;
+- compreensão do ser humano como princípio e fim do processo educativo;
+- inserção do curso na comunidade científica profissional, através da
+participação em comissões científicas, movimentos associativos, grupos de pesquisa,
+eventos científicos e profissionais;
+- integração com corpo discente através das práticas pedagógicas, de
+orientação acadêmicas, da iniciação cientifica, de estágios e monitorias;
+- divulgação e socialização do saber através de produções científicas,
+técnicas e culturais;
+- inserção do curso no contexto institucional, participando da gestão
+acadêmica e administrativa;
+- inserção do curso no contexto social através de práticas extensionistas,
+ações comunitárias e integração com a comunidade e grupos de pesquisa;
+- valorização e ênfase da dimensão interdisciplinar e do trabalho
+multiprofissional, bem como da inter-relação das disciplinas do currículo do curso;
+- valorização e utilização dos resultados do processo de avaliação
+institucional como meio de promover a melhoria do ensino no âmbito do Curso de
+Ciência da Computação.
+Para obter um resultado mais eficiente, o Curso recomenda aos seus
+professores que assumam uma postura de orientador. Não é papel do professor ser
+apenas um comunicador que repete o que está escrito, ele deve incentivar o aluno
+para ser crítico nas suas leituras.
+O curso salienta ainda que identificar outros meios adequados para abordar um
+conteúdo tecnológico é tarefa do professor. Assim, o professor deve,
+principalmente, orientar o aluno sobre onde buscar os conteúdos e cobrar dele a sua
+aplicação e uma análise crítica.
+O comportamento autodidata é requerido a um bom profissional da Computação e
+o professor tem um papel muito importante nisto.</Informação>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Paradigmas_de_Programação -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Paradigmas_de_Programação">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#3º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC117</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analisar os recursos das linguagens de  programação  e  selecionar  a  que melhor se adapte à solução do problema proposto.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Perfil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Perfil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <Informação rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Do egresso de um curso de bacharelado em Ciência da Computação é exigida uma
+predisposição e aptidões para a área, além de um conjunto de competências,
+habilidades e atitudes a serem adquiridas durante a realização do curso [SBC, Anais
+do III Curso de Qualidade, p.397, 2001]. Neste sentido, este capítulo define o
+perfil profissional desejado (seção 1), descreve os requisitos psicofísicos que
+devem ser trabalhados ao longo do curso (seção 2); e relaciona as classes de
+problemas que todo egresso deve estar apto a resolver (seção 3). As principais
+áreas de atuação são relacionadas no próximo capítulo.
+Definição do Perfil Profissional
+Por definição, o Bacharel em Ciência da Computação deve ser um profissional
+qualificado para a pesquisa e desenvolvimento na área de computação, para o projeto
+e construção de hardware e software básico e também para o uso de sistemas
+computadorizados em outras áreas da atividade humana, a fim de viabilizar ou
+aumentar a produtividade e a qualidade de todos os tipos de procedimentos.
+Na UFSM todo egresso deve ser um profissional (1) com domínio e capacidade
+para trabalhar na área da Computação, desenvolvendo projetos de computadores e
+sistemas de computação, programas e sistemas de informação; (2) atento ao caráter
+ecológico, social e ético; e (3) que exerça suas atividades na sociedade com
+responsabilidade.
+Descrição dos Requisitos Psicofísicos
+Para atender ao perfil profissional definido, as atividades do curso
+priorizam o exercício dos requisitos inerentes ao desempenho da profissão, a citar:
+- método e disciplina de trabalho;
+- raciocínio lógico e abstrato;
+- capacidade de trabalho em equipe;
+- criatividade, produtividade e iniciativa;
+- disposição para efetuar trabalho complexo e minucioso;
+- compromisso com o desenvolvimento tecnológico;
+- compromisso com o ser humano;
+- senso crítico, seriedade e responsabilidade.
+Problemas que os Egressos Deverão Estar Capacitados a Resolver
+Dado o perfil profissional desejado (seção 1), o egresso deverá estar apto a
+resolver as seguintes classes de problemas:
+- concepção, especificação, projeto, construção, avaliação e adaptação de
+sistemas digitais;
+- análise e projeto de estrutura lógica e funcional de computadores e sua
+implementação;
+- desenvolvimento e implementação de software básico e de apoio para sistemas
+computacionais;
+- projeto e desenvolvimento de sistemas e programas usando linguagens de
+programação;
+- projeto e desenvolvimento de sistemas de estruturação de informação;
+- projeto e desenvolvimento de redes de processamento local e remota, em
+matéria de hardware e de software;
+- direção, assessoria, consultoria, planejamento, coordenação e ensino na
+área de informática das organizações;
+- interação com especialistas em outras áreas de modo a desenvolver projetos
+interdisciplinares;
+- reconhecimento do setor produtivo de sua especialidade no que tange ao
+mercado, processos produtivos, tecnologias empregadas e potencialidades de seu
+desenvolvimento, principalmente no contexto regional;
+- exercício do magistério, em curso superior, nas disciplinas correspondentes
+às matérias de sua formação no curso de Ciência da Computação.</Informação>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Pesquisa_e_Ordenação_de_Dados_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Pesquisa_e_Ordenação_de_Dados_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#3º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1068</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analisar e selecionar estruturas de dados, suas representações na memória secundária e implementar algoritmos de manipulação.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Prazo_Máximo_Em_Semestres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Prazo_Máximo_Em_Semestres">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Integralização"/>
+        <Número_de_Semestres rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</Número_de_Semestres>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Prazo_Médio_Em_Semestres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Prazo_Médio_Em_Semestres">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Integralização"/>
+        <Número_de_Semestres rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</Número_de_Semestres>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Prazo_Mínimo_em_Semestres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Prazo_Mínimo_em_Semestres">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Integralização"/>
+        <Número_de_Semestres rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</Número_de_Semestres>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Programacao_Paralela -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Programacao_Paralela">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC139</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Utilizar métodos  e  técnicas  para  o  projeto, implementação  e  uso  de sistemas  de  programação  para  o  desenvolvimento  de  programas  paralelos   e distribuídos.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_de_Sistemas_Digitais -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_de_Sistemas_Digitais">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1033</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Compreender e projetar sistemas digitais a partir do modelo PO/PC, e descrever estes sistemas na linguagem de descrição de hardware VHDL.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_de_Software_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_de_Software_I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1073</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aplicar os conceitos e técnicas de Projeto e Gerência de Software, dando ênfase à construção piloto de aplicações, produtos ou serviços computacionais.
+Usar técnicas de trabalho em grupo.
+Identificar um problema real a ser resolvido.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_de_Software_II -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_de_Software_II">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1074</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aplicar os conceitos e técnicas de Projeto e Gerência de Software, dando ênfase à construção piloto de aplicações, produtos ou serviços computacionais. Usar técnicas de trabalho em grupo. Identificar um problema real a ser resolvido.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_e_Análise_de_Algoritmos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_e_Análise_de_Algoritmos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#4º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC120</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analisar e projetar algoritmos, levando em consideração a complexidade computacional envolvida, com o objetivo de encontrar soluções computacionais ideais para os problemas.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Prática_em_Sistemas_Operacionais -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Prática_em_Sistemas_Operacionais">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1035</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conhecer os recursos e características de sistemas operacionais e saber aplicá-los na prática para resolver, facilitar e agilizar as mais diversas tarefas e necessidades do dia-a-dia dentro do contexto do Curso de Ciência da Computação.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualidade_de_Software -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualidade_de_Software">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC133</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planejar e gerenciar o desenvolvimento de um software com qualidade.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Recursos_Humanos_e_Materiais -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Recursos_Humanos_e_Materiais">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <Informação rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Para que o Curso de Ciência da Computação possa operar adequadamente, neste
+capítulo são detalhados os recursos humanos e materiais necessários tanto para a
+parte administrativa como para a parte didática do Curso.
+RECURSOS ADMINISTRATIVOS
+Como qualquer curso de graduação, o Curso de Ciência da Computação necessita
+de no mínimo uma estrutura administrativa para atender as suas necessidades
+relacionadas à administração da vida acadêmica (coordenação do curso e administração
+de laboratório). Particularmente, para que a estrutura curricular do curso de
+Ciência da Computação possa ser adequadamente desenvolvida é necessário uma infraestrutura de equipamentos de informática bem constituída e mantida.
+Área física:
+Para atender adequadamente a gestão acadêmica do Curso, faz-se necessário duas
+salas conjugadas: uma para o coordenador do curso e outra para a secretaria do
+curso.
+Para atender adequadamente a administração da rede de computadores, faz-se
+necessário duas salas conjugadas: uma para os equipamentos servidores e outra para
+os administradores e bolsistas. Além disto, necessita-se de uma sala para o gerente
+da rede de computadores.
+Necessidade de nova área física: uma área física de no mínimo 6 m2 para o
+gerente da rede de computadores.
+Recursos Humanos:
+Para atender a gestão acadêmica do Curso é necessário:
+- 1 professor coordenador (20h);
+- 1 funcionário técnico administrativo (40h);
+Para atender a administração da rede de computadores é necessário:
+- 1 professor coordenador (10h);
+- 1 funcionário técnico, Analista de Tecnologia da Informação (40h);
+- 1 bolsista sênior por laboratório (20h);
+- 2 bolsistas júnior por laboratório (12h);
+Recursos humanos para limpeza e vigilância (terceirizados).
+Necessidades em recursos humanos: um funcionário de nível superior para função
+compatível com Analista de Tecnologia da Informação, a fim de gerenciar a rede de
+computadores.
+Equipamentos:
+Para atender a gestão acadêmica do Curso é necessário:
+- 2 computadores;
+- 1 impressora;
+- 1 fax;
+- 1 ramal telefônico;
+- 2 condicionadores de ar;
+- mobiliário adequado
+Para atender a administração da rede de computadores é necessário:
+- 5 computadores servidores;
+- 3 computadores para administração;
+- 1 computador por laboratório para bolsistas;
+- 2 computadores reserva para testes e controle de disponibilidade;
+- 2 ramais telefônicos (há laboratórios em áreas distintas do CT);
+- condicionadores de ar;
+- mobiliário adequado.
+Necessidades de equipamentos: atualização da configuração dos computadores
+servidores e dos computadores utilizados na administração dos laboratórios.
+RECURSOS DIDÁTICOS
+Esta seção detalha os recursos humanos e materiais necessários a implementação
+de um Curso de Ciência da Computação de qualidade que opera em 8 semestres.
+Área física e equipamentos:
+Infra-estrutura de apoio didático:
+Salas de Aula
+- 3 salas de aula com capacidade para 30 pessoas, uma com projetor multimídia;
+- 3 salas de aula com capacidade para 40 pessoas, uma com projetor multimídia;
+- 2 salas de aula com capacidade para 50 pessoas;
+- 1 sala de aula com 22 computadores e projetor multimídia.
+Laboratórios
+GERAL
+- 3 salas para laboratório de computação com 20 computadores cada.
+ESPECIALIZADOS
+- Salas para laboratórios temáticos dos grupos de pesquisa;
+- 1 sala para laboratório de hardware com 15 computadores equipados com placas
+especializadas para experimentos, osciloscópio e analisador lógico.
+Salas de professores
+Para garantir uma boa produtividade científica e acadêmica, é necessário
+alocar os professores em gabinetes individuais ou compartilhados com, no
+máximo, dois professores.
+Biblioteca
+Conter pelo menos o número mínimo, de acordo com os parâmetros de avaliação do
+MEC, de livros adotados como “livro texto” das disciplinas. Além disto, manter um
+acervo com livros/periódicos com boa diversidade na área de computação, a fim de
+suportar trabalhos extra-curriculares de qualquer cunho (ensino, pesquisa ou
+extensão).
+Infra-estrutura de apoio geral:
+- 1 auditório com recursos para teleconferência;
+- 1 sala de reuniões;
+- 1 sala para acomodar o Programa de Educação Tutorial (PET);
+- 1 sala para o diretório acadêmico;
+- gabinetes de trabalho para acomodar 18 professores com computadores e ramais
+telefônicos individuais e impressoras coletivas.
+Necessidades de área física:
+- 1 sala de aula com 35 m2;
+- 1 sala com 35 m2 para alocação do laboratório de hardware;
+- 2 salas com 35 m2 para alocação do laboratório de computação geral;
+- 1 sala com 18 m2 para o diretório acadêmico.
+TOTAL = 123 m2
+Necessidades de equipamentos para os laboratórios:
+- 22 computadores novos para sala 334 do CT (configuração atual insuficiente);
+- 40 computadores para as novas salas de laboratório geral;
+- 15 computadores para laboratório de hardware;
+- 2 projetores multimídia (salas de aula);
+- 1 osciloscópio para laboratório de hardware;
+- 1 analisador lógico para laboratório de hardware.
+Necessidades da biblioteca:
+De acordo com o relatório da última avaliação in-loco das condições de ensino,
+realizado pelo INEP, a biblioteca não disponibiliza adequadamente periódicos nem
+espaço de estudos aos alunos do curso. Entendemos que a CAPES disponibiliza um
+grande número de periódicos a todas as IES públicas, mas este fato não foi levado em
+consideração pela equipe do INEP. De qualquer modo, o acervo de livros além de
+necessitar de constante atualização necessita também de um maior número de
+exemplares de livros texto.
+A biblioteca setorial do CT deve dispor de local apropriado para estudo.
+Recursos Humanos:
+Corpo Docente
+Considerando a carga horária total do Curso e considerando que a média de
+encargos didáticos em sala de aula para um professor seja de 10 horas semanais, o
+curso de Ciência da Computação necessita de pelo menos 23 professores para ofertar
+suas disciplinas todos os semestres.
+- 5 professores para as áreas de matemática, física e estatística;
+- 1 professor da área de línguas estrangeiras;
+- 18 professores da área de computação.
+A contratação docente realizada até o momento para o curso de Ciência da
+Computação permite oferecer somente a metade das disciplinas do seu currículo a cada
+semestre letivo, como previsto no projeto original do curso. Entretanto, isto causa
+transtorno ao corpo discente quando a seqüência aconselhada não puder ser seguida,
+como é o caso de alunos reprovados, transferidos, ou com limitação de tempo de
+dedicação ao curso. Como conseqüência, isto gera uma dilatação no tempo total de
+permanência de um aluno na UFSM. A solução para este problema recai na necessidade
+de completar a oferta das disciplinas. Mesmo com a boa vontade, e algumas soluções
+pontuais junto aos departamentos, a solução do problema só é possível com a
+contratação de mais professores.
+Funcionários
+- 1 funcionário de nível superior para atender a gerência dos laboratórios.
+Necessidade de recursos humanos
+- 8 professores da área de computação;
+- 1 funcionário de nível superior do tipo Analista de Tecnologia da Informação.
+ Através do Processo Administrativo n. 23081.032574/2019-16 atuação da
+coordenação do curso bem como do colegiado do curso estão expressos a seguir
+amparados pelo Regimento Geral da UFSM.
+Art. 94 Aos colegiados de curso de graduação compete:
+I – propor ao CEPE, por intermédio do conselho do respectivo centro ou de unidade
+descentralizada, os projetos pedagógicos de curso, assim como as reformulações
+curriculares;
+II – estabelecer a oferta de disciplina de cada período letivo, inclusive as
+Disciplinas Complementares de Graduação – DCG;
+III – acompanhar a implementação dos Projetos Pedagógicos de Curso;
+IV – aprovar as Atividades Complementares de Graduação – ACG;
+V – propor a substituição ou qualificação de professores ou outras providências
+necessárias à melhoria do ensino ministrado;
+VI – representar junto aos órgãos competentes em caso de infração disciplinar
+discente;
+VII – deliberar sobre o aproveitamento de estudo, consultado o departamento
+respectivo, se necessário;
+VIII – estabelecer, semestralmente, os critérios de seleção para preenchimento de
+vagas destinadas a ingresso, reingresso e transferências internas e externas;
+IX – decidir sobre todos os aspectos da vida acadêmica do corpo discente, tais como:
+adaptação curricular, matrícula, trancamento, opções, dispensas e cancelamento de
+matrícula, bem como estabelecer o controle da respectiva integralização curricular;
+X – zelar para que os horários das disciplinas sejam adequados à sua natureza e do
+Curso; e
+XI – exercer as demais atribuições que lhe sejam previstas em lei ou estabelecidas
+pelo CEPE.
+Parágrafo único. Das decisões do colegiado de curso, caberá recurso em primeira
+instância ao conselho de centro ou de unidade descentralizada respectivo e
+posteriormente ao Conselho de Ensino, Pesquisa e Extensão”.
+Art. 96 Os coordenadores de curso de graduação serão designados conforme dispõe o
+Regimento Interno da Unidade.
+Art. 97 Aos coordenadores de curso de graduação incumbe:
+I – integrar o conselho de centro ou de unidade descentralizada, na qualidade de
+membro nato;
+II – elaborar propostas para a programação acadêmica a ser desenvolvida e submetê-la
+ao colegiado de curso dentro dos prazos previstos no Calendário Acadêmico;
+III – convocar, por escrito, e presidir as reuniões do colegiado de curso;</Informação>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Redes_de_Computadores -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Redes_de_Computadores">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#6º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">75</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1017</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reconhecer e aplicar as formas de distribuição da informação e dos protocolos de acesso a redes de computadores.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Sistemas_Distribuídos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Sistemas_Distribuídos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#7º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1018</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conhecer os detalhes de implementações de sistemas operacionais distribuídos.Ter noções de algoritmos distribuídos.Conhecer os conceitos de programação concorrente com multiprogramação e comunicação.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Sistemas_Operacionais_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Sistemas_Operacionais_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#4º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1080</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conhecer os aspectos fundamentais da construção de sistemas operacionais.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Sistemas_de_Computação_Móvel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Sistemas_de_Computação_Móvel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1001</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">- identificar os componentes de um sistema móvel.
+- projetar sistemas móveis.
+- programar aplicações básicas utilizando a linguagem Java na versão Micro Edition.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Teoria_da_Computação -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Teoria_da_Computação">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#5º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1008</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Entender o conceito formal de programa e máquina (de registradores e de Turing), bem como compreender os problemas relacionados a computabilidade efetiva.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Trabalho_de_Graduação_em_Ciência_da_Computação -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Trabalho_de_Graduação_em_Ciência_da_Computação">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#8º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">180</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELC1084</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elaborar uma proposta de trabalho final na área de Sistemas de Informação.
+Desenvolver e apresentar o trabalho proposto.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Trancamentos_Parciais -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Trancamentos_Parciais">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Integralização"/>
+        <Número_de_Disciplinas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</Número_de_Disciplinas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Trancamentos_totais -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Trancamentos_totais">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Integralização"/>
+        <Número_de_Semestres rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Número_de_Semestres>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Turno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Turno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <Turno rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diurno</Turno>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Álgebra_Linear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Álgebra_Linear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#2º_Semestre"/>
+        <Carga_Horária rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Carga_Horária>
+        <Créditos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Créditos>
+        <Código rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTM1018</Código>
+        <Descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operar com sistemas de equações lineares, espaços vetoriais, produtos, transformações lineares, autovalores e espaços com produto interno.</Descrição>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Áreas_de_Atuação -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Áreas_de_Atuação">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Projeto_Pedagógico"/>
+        <Informação rdf:datatype="http://www.w3.org/2001/XMLSchema#string">De acordo com o perfil profissional traçado, o egresso do Curso de Ciência da
+Computação da UFSM está capacitado a acompanhar e avaliar avanços tecnológicos em
+computação, bem como aplicar e implementar as evoluções, reposições e adaptações
+que se façam necessárias, tanto de forma reativa com pró-ativa, logo deve estar
+apto a desenvolver as seguintes funções no mercado de trabalho:
+- empreendedor – descobrimento e empreendimento de novas oportunidades para
+aplicações usando sistemas computacionais e avaliando a conveniência de se investir
+no desenvolvimento da aplicação;
+- consultor – consultoria e assessoria a empresas de diversas áreas no que
+tange ao uso adequado de sistemas computacionais;
+- coordenador de equipe – coordenação de equipes envolvidas em projetos na
+área de computação e informática;
+- membro de equipe – participação de forma colaborativa e integrada de
+equipes que desenvolvem projetos na área de informática;
+- pesquisador – participação em projetos de pesquisa científica e
+tecnológica.</Informação>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Turno">
+        <rdfs:label xml:lang="pt">Turno</rdfs:label>
+        <rdfs:comment xml:lang="pt">Informa o turno de um curso.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#Qualquer_Semestre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#1º_Semestre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#2º_Semestre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#3º_Semestre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#4º_Semestre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#5º_Semestre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#6º_Semestre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#7º_Semestre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduar/ontologies/2022/9/cc-ufsm-ontology#8º_Semestre"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

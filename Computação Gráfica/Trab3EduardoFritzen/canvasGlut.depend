@@ -1,0 +1,271 @@
+# depslib dependency file v1.0
+1710341357 source:d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	"gl_canvas2d.h"
+	"Bola.h"
+	"Relogio.h"
+	"Botao.h"
+
+1632060799 d:\ufsm\disciplinas\computacao grafica\demos\include\gl\glut.h
+	"freeglut_std.h"
+
+1632060797 d:\ufsm\disciplinas\computacao grafica\demos\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1632060794 d:\ufsm\disciplinas\computacao grafica\demos\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1710341387 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"Vector2.h"
+
+1589217858 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\vector2.h
+
+1589214882 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\bola.h
+	"gl_canvas2d.h"
+
+1193164156 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\relogio.h
+	"gl_canvas2d.h"
+
+1589214891 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\botao.h
+	"gl_canvas2d.h"
+
+1705326017 source:d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1589218349 source:d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\relogio.cpp
+	"Relogio.h"
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
+1711316314 source:c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab1eduardofritzen\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+	"Ponto.h"
+	<vector>
+
+1711316878 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab1eduardofritzen\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"Ponto.h"
+	"Vector2.h"
+
+1632060799 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\include\gl\glut.h
+	"freeglut_std.h"
+
+1632060797 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1632060794 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1711317435 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab1eduardofritzen\src\ponto.h
+	"gl_canvas2d.h"
+	<vector>
+
+1711316688 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab1eduardofritzen\src\vector2.h
+
+1712596233 source:c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab1eduardofritzen\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<vector>
+	"gl_canvas2d.h"
+	"buttonManager.h"
+	"panelmanager.h"
+	"bmpManager.h"
+	"SevenSegmentDisplayManager.h"
+
+1712180086 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab1eduardofritzen\src\botaomanager.h
+	<iostream>
+	<vector>
+	<cmath>
+	"gl_canvas2d.h"
+	"figuraManager.h"
+	"Color.h"
+	<functional>
+
+1712179897 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab1eduardofritzen\src\figuramanager.h
+	<iostream>
+	<vector>
+	<cmath>
+	"gl_canvas2d.h"
+	"Vector2.h"
+	<fstream>
+	"Ponto.h"
+	<memory>
+
+1711743650 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab1eduardofritzen\src\color.h
+
+1711737080 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab1eduardofritzen\src\painelmanager.h
+	"gl_canvas2d.h"
+	<vector>
+
+1711764105 source:c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab1eduardofritzen\src\bmp.cpp
+	"Bmp.h"
+	<string.h>
+	"gl_canvas2d.h"
+
+1711824420 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab1eduardofritzen\src\bmp.h
+	<stdio.h>
+	<stdlib.h>
+	"gl_canvas2d.h"
+	"Ponto.h"
+
+1712003130 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab1eduardofritzen\src\panelmanager.h
+	"gl_canvas2d.h"
+	<vector>
+
+1712591100 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab1eduardofritzen\src\bmpmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<vector>
+	<string>
+	<cmath>
+	"gl_canvas2d.h"
+	"Ponto.h"
+	<cstring>
+	<fstream>
+	<sstream>
+	<algorithm>
+
+1712156391 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab1eduardofritzen\src\sevensegmentdisplaymanager.h
+	"gl_canvas2d.h"
+	<map>
+	<vector>
+	<string>
+
+1712592088 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab1eduardofritzen\src\buttonmanager.h
+	<iostream>
+	<vector>
+	<cmath>
+	"gl_canvas2d.h"
+	"bmpManager.h"
+	"Color.h"
+	<functional>
+
+1716851381 source:c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab3eduardofritzen\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<vector>
+	<algorithm>
+	"gl_canvas2d.h"
+	"Frames.h"
+	"Cannon.h"
+	"Projectile.h"
+	"Block.h"
+	"Menu.h"
+
+1715909224 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab3eduardofritzen\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"Ponto.h"
+	"Vector2.h"
+
+1716145384 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab3eduardofritzen\src\ponto.h
+	"gl_canvas2d.h"
+	<vector>
+
+1716496798 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab3eduardofritzen\src\vector2.h
+
+1716125814 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab3eduardofritzen\src\buttonmanager.h
+	<iostream>
+	<vector>
+	<cmath>
+	"gl_canvas2d.h"
+	"Color.h"
+	<functional>
+
+1712591100 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab3eduardofritzen\src\bmpmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<vector>
+	<string>
+	<cmath>
+	"gl_canvas2d.h"
+	"Ponto.h"
+	<cstring>
+	<fstream>
+	<sstream>
+	<algorithm>
+
+1716222001 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab3eduardofritzen\src\color.h
+
+1712003130 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab3eduardofritzen\src\panelmanager.h
+	"gl_canvas2d.h"
+	<vector>
+
+1712156391 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab3eduardofritzen\src\sevensegmentdisplaymanager.h
+	"gl_canvas2d.h"
+	<map>
+	<vector>
+	<string>
+
+1715909553 source:c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab3eduardofritzen\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+	"Ponto.h"
+	<vector>
+
+1715991482 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab3eduardofritzen\src\frames.h
+	<stdio.h>
+	<time.h>
+
+1716849594 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab3eduardofritzen\src\cannon.h
+	"Vector2.h"
+
+1716849607 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab3eduardofritzen\src\projectile.h
+	"Vector2.h"
+	"gl_canvas2d.h"
+	"Ponto.h"
+
+1716849582 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab3eduardofritzen\src\block.h
+	"Ponto.h"
+	"Color.h"
+
+1716850534 c:\users\eduar\downloads\faculdade\7_semestre\computação gráfica\conteúdo\demos\trab3eduardofritzen\src\menu.h
+	"gl_canvas2d.h"
+	"Vector2.h"
+	<vector>
+	<string>
+

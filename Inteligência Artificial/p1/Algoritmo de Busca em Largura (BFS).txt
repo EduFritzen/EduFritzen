@@ -1,0 +1,124 @@
+Algoritmo de Busca em Largura (BFS):
+
+Inicialização:
+
+Novos abertos: [A]
+Nodos fechados: []
+Passo 1:
+
+Novos abertos: [oper(1, a, b)]
+Nodos fechados: [A]
+Passo 2:
+
+Novos abertos: [oper(2, a, b), oper(3, a, d)]
+Nodos fechados: [A]
+Passo 3:
+
+Novos abertos: [oper(3, a, d), oper(4, b, e), oper(5, b, f)]
+Nodos fechados: [A, oper(2, a, b)]
+Passo 4:
+
+Novos abertos: [oper(3, a, d), oper(4, b, e), oper(5, b, f), oper(6, c, g), oper(7, c, h)]
+Nodos fechados: [A, oper(2, a, b)]
+Passo 5:
+
+Novos abertos: [oper(3, a, d), oper(4, b, e), oper(5, b, f), oper(6, c, g), oper(7, c, h), oper(8, c, i)]
+Nodos fechados: [A, oper(2, a, b)]
+Passo 6:
+
+Novos abertos: [oper(3, a, d), oper(4, b, e), oper(5, b, f), oper(6, c, g), oper(7, c, h), oper(8, c, i), oper(9, d, j)]
+Nodos fechados: [A, oper(2, a, b)]
+Passo 7:
+
+Novos abertos: [oper(4, b, e), oper(5, b, f), oper(6, c, g), oper(7, c, h), oper(8, c, i), oper(9, d, j), oper(11, e, l)]
+Nodos fechados: [A, oper(2, a, b), oper(3, a, d)]
+Passo 8:
+
+Novos abertos: [oper(5, b, f), oper(6, c, g), oper(7, c, h), oper(8, c, i), oper(9, d, j), oper(11, e, l), oper(13, j, n)]
+Nodos fechados: [A, oper(2, a, b), oper(3, a, d)]
+Passo 9:
+
+Novos abertos: [oper(5, b, f), oper(6, c, g), oper(7, c, h), oper(8, c, i), oper(9, d, j), oper(11, e, l), oper(13, j, n), oper(14, j, o)]
+Nodos fechados: [A, oper(2, a, b), oper(3, a, d)]
+Passo 10:
+
+Novos abertos: [oper(5, b, f), oper(6, c, g), oper(7, c, h), oper(8, c, i), oper(9, d, j), oper(11, e, l), oper(13, j, n), oper(14, j, o), oper(17, m, d)]
+Nodos fechados: [A, oper(2, a, b), oper(3, a, d)]
+Passo 11:
+
+Novos abertos: [oper(5, b, f), oper(6, c, g), oper(7, c, h), oper(8, c, i), oper(9, d, j), oper(11, e, l), oper(13, j, n), oper(14, j, o), oper(17, m, d), oper(16, l, h)]
+Nodos fechados: [A, oper(2, a, b), oper(3, a, d)]
+No passo 11, a cidade J (j) é alcançada pelos operadores oper(9, d, j) e oper(13, j, n). Nesse momento, o algoritmo de busca em largura pode parar.
+
+                A
+              /   \
+             B     D
+            / \   / \
+           E   F G   H
+          /     \
+         K       M
+        /
+       J
+      / \
+     N   O
+
+Algoritmo de Busca em Profundidade (DFS):
+
+Inicialização:
+
+Novos abertos: [A]
+Nodos fechados: []
+Passo 1:
+
+Novos abertos: [oper(1, a, b)]
+Nodos fechados: [A]
+Passo 2:
+
+Novos abertos: [oper(2, a, b)]
+Nodos fechados: [A, oper(1, a, b)]
+Passo 3:
+
+Novos abertos: [oper(4, b, e), oper(5, b, f)]
+Nodos fechados: [A, oper(1, a, b)]
+Passo 4:
+
+Novos abertos: [oper(4, b, e), oper(5, b, f), oper(10, e, k)]
+Nodos fechados: [A, oper(1, a, b)]
+Passo 5:
+
+Novos abertos: [oper(4, b, e), oper(5, b, f), oper(10, e, k), oper(15, k, f)]
+Nodos fechados: [A, oper(1, a, b)]
+Passo 6:
+
+Novos abertos: [oper(4, b, e), oper(5, b, f), oper(10, e, k), oper(15, k, f), oper(11, e, l)]
+Nodos fechados: [A, oper(1, a, b)]
+Passo 7:
+
+Novos abertos: [oper(4, b, e), oper(5, b, f), oper(10, e, k), oper(15, k, f), oper(11, e, l), oper(16, l, h)]
+Nodos fechados: [A, oper(1, a, b)]
+Passo 8:
+
+Novos abertos: [oper(4, b, e), oper(5, b, f), oper(10, e, k), oper(15, k, f), oper(11, e, l), oper(16, l, h), oper(7, c, h)]
+Nodos fechados: [A, oper(1, a, b)]
+Passo 9:
+
+Novos abertos: [oper(4, b, e), oper(5, b, f), oper(10, e, k), oper(15, k, f), oper(11, e, l), oper(16, l, h), oper(7, c, h), oper(13, j, n)]
+Nodos fechados: [A, oper(1, a, b)]
+Passo 10:
+
+Novos abertos: [oper(4, b, e), oper(5, b, f), oper(10, e, k), oper(15, k, f), oper(11, e, l), oper(16, l, h), oper(7, c, h), oper(13, j, n), oper(14, j, o)]
+Nodos fechados: [A, oper(1, a, b)]
+
+                A
+              /   \
+             B     D
+            / \     \
+           E   F     J
+          /     \   / \
+         K       M N   O
+          \
+           L
+          /
+         H
+
+
