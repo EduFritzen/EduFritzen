@@ -11,4 +11,4 @@ Estatísticas do GitHub:
 
 Linguagens de programação mais usadas:
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=EduFritzen)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=EduFritzen)](https://github.com/EduFritzen/github-readme-stats)
